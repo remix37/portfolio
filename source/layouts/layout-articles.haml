@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    / Use the title from a page's frontmatter if it has one
+    %title
+      Blog Title#{' - ' + current_article.title unless current_article.nil?}
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+  %body
+    %h1 New layout
+    #main{:role => "main"}
+      = yield

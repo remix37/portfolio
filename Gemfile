@@ -16,3 +16,6 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+gem "middleman-livereload", "~> 3.4.3"
+gem "middleman-sprockets", github: "middleman/middleman-sprockets",      branch: "master"

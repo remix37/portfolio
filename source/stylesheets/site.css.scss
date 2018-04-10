@@ -1,5 +1,21 @@
 @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "./mixins.css.scss";
+@import "./retina.css.scss";
+
+@import "./owl.carousel.css.scss";
+@import "./owl.theme.default.css.scss";
+
+@import "./vegas.css.scss";
 
 body {
-  // background-color: royalblue;
+  padding-top: 70px;
+}
+
+#slide {
+  background-color: royalblue;
+  height: 65vh;
+}
+
+.description {
+  height: 35vh;
 }

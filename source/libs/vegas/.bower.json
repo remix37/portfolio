@@ -1,0 +1,12 @@
+{
+  "name": "vegas",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 04 Jan 2017 18:55:48 GMT",
+    "Content-Length": "5377",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "https://jaysalvat.github.io/vegas/releases/latest/vegas.js",
+  "_target": "*",
+  "_originalSource": "https://jaysalvat.github.io/vegas/releases/latest/vegas.js"
+}

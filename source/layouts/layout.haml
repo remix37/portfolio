@@ -11,38 +11,50 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
   %body
     = partial "partials/header"
 
-    .container-fluid
-      .row#slide
-
-      .row.description
-        .col-md-12.pt-30.pb-30.pl-60.pr-60
-          %h1.text-uppercase{:style => "font-weight: 700;"}
-            Designer UX/UI
-            %br
-            Developer Web Front End
-
+    #slide.pt-70
+      #particles-js
 
     .container
       .row
-        = yield
-      .row
-        %h2 Recent Articles
-        %ol
-          - blog.articles[0...10].each do |article|
-            %li
-              = link_to article.title, article
-              %span= article.date.strftime('%b %e')
-        %h2 Tags
-        %ol
-          - blog.tags.each do |tag, articles|
-            %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-        %h2 By Year
-        %ol
-          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-            %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
+        .col-md-12
+          %h1.text-uppercase.author
+            Rémy Rigault
+
+      .clearfix
+      .row.description.pt-60.pb-60
+        .col-md-5
+          %h1.text-uppercase.post
+            Designer UX/UI
+            -# %br
+            -# Developer Web Front End
+        .col-md-6
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna mi. Duis eget consequat turpis. Morbi consequat lectus sed enim tempus cursus quis sed mauris.
+          %p Vestibulum ac lectus at metus sollicitudin scelerisque. Nam eget vestibulum elit. Cras vestibulum tortor ut tincidunt sodales. Nullam vestibulum pretium tortor ac ultricies. Proin lectus sapien, sodales sed lectus eget, ullamcorper elementum mi. In euismod tempus velit, eget malesuada mi varius tristique.
+
+    #works{:style => "background: royalblue;"}
+      .container
+        -# = yield
+        .row
+          .col-md-12
+            %h2 Mes réalisations
+            .row
+              %ol
+                - blog.tags.each do |tag, articles|
+                  %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+
+              - blog.articles[0...10].each do |article|
+                .col-sm-4{:style => "border: 1px solid red;"}
+                  = link_to article.title, article
+                  %span= article.date.strftime('%b %e')
+
+
+          -# %h2 By Year
+          -# %ol
+          -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+          -#     %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
 
     = partial "partials/footer"
+    = javascript_include_tag "site"

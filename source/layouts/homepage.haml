@@ -1,0 +1,101 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i", :rel => "stylesheet"}/
+    / Use the title from a page's frontmatter if it has one
+    %title
+      Blog Title#{' - ' + current_article.title unless current_article.nil?}
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag "site"
+  %body
+    = partial "partials/header"
+
+    .particles.pt-70
+      #particles-js
+
+    .home
+      .container
+        .row
+          .col-md-12
+            %h1.text-uppercase.author
+              Rémy Rigault
+        .clearfix
+        .row.description.pt-60.pb-60
+          .col-md-5
+            %p.text-uppercase.post
+              %strong
+                Designer UX/UI
+              -# %br
+              -# Developer Web Front End
+          .col-md-6
+            %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna mi. Duis eget consequat turpis. Morbi consequat lectus sed enim tempus cursus quis sed mauris.
+            %p Vestibulum ac lectus at metus sollicitudin scelerisque. Nam eget vestibulum elit. Cras vestibulum tortor ut tincidunt sodales. Nullam vestibulum pretium tortor ac ultricies. Proin lectus sapien, sodales sed lectus eget, ullamcorper elementum mi. In euismod tempus velit, eget malesuada mi varius tristique.
+        .clearfix
+        .row.scroll
+          .col-xs-2.col-xs-offset-5.height-100
+            %img.img-responsive.icon-scroll{:src => image_path('home/scroll.png'), :srcset => " #{image_path('home/scroll@2x.png')} 2x, #{image_path('home/scroll.png')} 1x"}/
+          .col-xs-5.height-100
+            %ul.list-inline{:style => "bottom: 30px; position: absolute; right: 30px;"}
+              %li
+                %span.fa.fa-linkedin
+              %li
+                %span.fa.fa-dribbble
+
+    .about-me
+      .container
+        .row.pt-30.pb-30
+          .col-md-7
+            %h2 À propos de moi
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .row
+              .col-md-6
+                %img{:src => "https://picsum.photos/30/30"}/
+                %h3 Branding
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              .col-md-6
+                %img{:src => "https://picsum.photos/30/30"}/
+                %h3 Branding
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              .clearfix
+              .col-md-6
+                %img{:src => "https://picsum.photos/30/30"}/
+                %h3 Branding
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              .col-md-6
+                %img{:src => "https://picsum.photos/30/30"}/
+                %h3 Branding
+                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+
+      .container
+        .row.pt-30.pb-30
+          .col-md-12
+            %h2 Mes réalisations
+            .row
+
+
+              %ul.list-inline
+
+
+                - blog.tags.each do |tag, articles|
+                  %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+
+              - blog.articles[0...10].each do |article|
+                .col-sm-4
+                  .block
+                    = link_to article do
+                      %img.img-responsive{:alt => "", :src => "../images/articles/#{article.data.thumbnail}"}/
+                      %p= article.title
+                      %span= article.date.strftime('%b %e')
+
+            -# %h2 By Year
+            -# %ol
+            -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+            -#     %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
+
+    = partial "partials/footer"
+    = javascript_include_tag "site"

@@ -14,47 +14,10 @@
   %body
     = partial "partials/header"
 
-    #slide.pt-70
-      #particles-js
-
-    .container
+    .container.mt-100
       .row
-        .col-md-12
-          %h1.text-uppercase.author
-            Rémy Rigault
-
-      .clearfix
-      .row.description.pt-60.pb-60
-        .col-md-5
-          %h1.text-uppercase.post
-            Designer UX/UI
-            -# %br
-            -# Developer Web Front End
-        .col-md-6
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna mi. Duis eget consequat turpis. Morbi consequat lectus sed enim tempus cursus quis sed mauris.
-          %p Vestibulum ac lectus at metus sollicitudin scelerisque. Nam eget vestibulum elit. Cras vestibulum tortor ut tincidunt sodales. Nullam vestibulum pretium tortor ac ultricies. Proin lectus sapien, sodales sed lectus eget, ullamcorper elementum mi. In euismod tempus velit, eget malesuada mi varius tristique.
-
-    #works{:style => "background: royalblue;"}
-      .container
-        -# = yield
-        .row
-          .col-md-12
-            %h2 Mes réalisations
-            .row
-              %ol
-                - blog.tags.each do |tag, articles|
-                  %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-
-              - blog.articles[0...10].each do |article|
-                .col-sm-4{:style => "border: 1px solid red;"}
-                  = link_to article.title, article
-                  %span= article.date.strftime('%b %e')
-
-
-          -# %h2 By Year
-          -# %ol
-          -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-          -#     %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
+        -# %img.img-responsive{:alt => "", :src => "../images/articles/#{current_article.data.thumbnail}"}/
+        = yield
 
     = partial "partials/footer"
     = javascript_include_tag "site"

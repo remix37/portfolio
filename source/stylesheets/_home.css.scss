@@ -1,0 +1,54 @@
+.home {
+  width: 100%;
+  border-bottom: 1px solid $rr-color;
+}
+
+.about-me {
+  @include retina('../images/home/bg-about-me.png', 2, 33% auto, right top no-repeat);
+}
+
+.particles{
+  height: 50vh;
+  width: 100%;
+  min-height: 320px;
+}
+
+.description {
+  height: 35vh;
+  min-height: 224px;
+}
+
+.scroll {
+  height: 15vh;
+  min-height: 96px;
+}
+
+.icon-scroll{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.author {
+  font-size: 5.7em;
+  line-height: 1em;
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  bottom: -0.15em;
+  font-family: 'DIN Pro Condensed Medium';
+  color: $white-color;
+}
+
+.post {
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+#particles-js {
+  @include retina('../images/home/bg-homepage.png', 2, cover, center center no-repeat);
+  height: 100%;
+}

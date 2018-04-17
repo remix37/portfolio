@@ -11,12 +11,13 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
   %body
     = partial "partials/header"
 
     .container.mt-100
       .row
+        %img.img-responsive{:alt => "", :src => "../images/articles/#{current_article.data.thumbnail}"}/
         = yield
 
     = partial "partials/footer"
+    = javascript_include_tag "site"

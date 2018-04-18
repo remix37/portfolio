@@ -10,7 +10,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 # With alternative layout
-page "/index.html", layout: :homepage
+# page "/index.html", layout: :homepage
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
@@ -66,6 +66,9 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 end
+
+# Pretty URLs
+activate :directory_indexes
 
 # Sprockets
 activate :sprockets

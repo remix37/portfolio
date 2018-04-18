@@ -23,6 +23,22 @@ $loop-step: 5;
 	}
 }
 
+// box-shadow
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+     -moz-box-shadow: $params;
+          box-shadow: $params;
+}
+
+// transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
 @media screen and (min-width: $screen-md-min) {
 	.row-eq-height {
 	  display: -webkit-box;
@@ -46,7 +62,7 @@ $loop-step: 5;
 }
 
 /* @include transition(all,2s,ease-out); */
-@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+@mixin transition($what: all, $time: 0.3s, $how: ease-in-out) {
     -webkit-transition: $what $time $how;
     -moz-transition:    $what $time $how;
     -ms-transition:     $what $time $how;

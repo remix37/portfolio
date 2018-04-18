@@ -7,17 +7,19 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i", :rel => "stylesheet"}/
     / Use the title from a page's frontmatter if it has one
     %title
-      Blog Title#{' - ' + current_article.title unless current_article.nil?}
+      Rémy Rigault#{' - ' + current_article.title unless current_article.nil?}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
   %body
     = partial "partials/header"
 
-    .container.mt-100
-      .row
-        -# %img.img-responsive{:alt => "", :src => "../images/articles/#{current_article.data.thumbnail}"}/
-        = yield
+    = yield
+
+    -# %h2 By Year
+    -# %ol
+    -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    -#     %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
 
     = partial "partials/footer"
     = javascript_include_tag "site"

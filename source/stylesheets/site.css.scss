@@ -5,7 +5,9 @@
 
 @import "./header.css.scss";
 @import "./footer.css.scss";
+
 @import "./home.css.scss";
+@import "./article.css.scss";
 
 body {
   // padding-top: 70px;
@@ -35,9 +37,9 @@ h3 {
   @include transition(all);
 
   &:hover {
-    @include box-shadow(0px 3px 8px rgba($black-color, 0.25));
+    @include box-shadow(0px 8px 15px rgba($black-color, 0.25));
     // bottom: 3px;
-    @include transform(translate(0%, -3px));
+    @include transform(translate(0%, -6px));
   }
 
   a {
@@ -118,5 +120,43 @@ h3 {
     background: transparent;
     width: 100%;
     transition: 0s;
+  }
+}
+
+.link.active{
+  &:before {
+    background: $rr-color;
+    width: 100%;
+  }
+  &:after {
+    background: transparent;
+    width: 100%;
+  }
+}
+
+.btn-prev ,
+.btn-next {
+  .fa{
+    opacity: 0;
+    position: relative;
+    @include transition(all);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-prev {
+  &:hover .fa{
+    opacity: 1;
+    @include transform(translate(-10px, 0%));
+  }
+}
+
+.btn-next {
+  &:hover .fa{
+    opacity: 1;
+    @include transform(translate(10px, 0%));
   }
 }

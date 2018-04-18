@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i", :rel => "stylesheet"}/
+    / Use the title from a page's frontmatter if it has one
+    %title
+      Rémy Rigault#{' - ' + current_article.title unless current_article.nil?}
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag "site"
+  %body
+    = partial "partials/header"
+
+    = yield
+
+    = partial "partials/footer"
+    = javascript_include_tag "site"
+
+    :javascript
+      $(document).ready(function() {
+        $("a[title='#{tagname}']").addClass("active");
+      });

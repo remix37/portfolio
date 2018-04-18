@@ -17,7 +17,7 @@ per_page: 6
     .clearfix
     .row.description.pt-60.pb-60
       .col-md-5
-        %p.text-uppercase.post
+        %p.text-uppercase.post.hideme
           %strong
             Designer UX/UI
           -# %br
@@ -28,7 +28,8 @@ per_page: 6
     .clearfix
     .row.scroll
       .col-xs-2.col-xs-offset-5.height-100
-        %img.img-responsive.icon-scroll{:src => image_path('images/home/scroll.png'), :srcset => " #{image_path('images/home/scroll@2x.png')} 2x, #{image_path('images/home/scroll.png')} 1x"}/
+        %a{:href => "#AboutMe"}
+          %img.img-responsive.icon-scroll{:src => image_path('images/home/scroll.png'), :srcset => " #{image_path('images/home/scroll@2x.png')} 2x, #{image_path('images/home/scroll.png')} 1x"}/
       .col-xs-5.height-100
         %ul.list-inline{:style => "bottom: 30px; position: absolute; right: 30px;"}
           %li
@@ -36,36 +37,36 @@ per_page: 6
           %li
             %span.fa.fa-dribbble
 
-.about-me
+.about-me#AboutMe
   .container
     .row.pt-30.pb-30
       .col-md-7
-        %h2 À propos de moi
+        %h2.hideme À propos de moi
         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .row
-          .col-md-6
-            %img{:src => "https://picsum.photos/30/30"}/
+        .row.hideme
+          .col-md-6.mt-30
+            %img{:src => image_path('icons/brand_icon.png'), :srcset => " #{image_path('icons/brand_icon@2x.png')} 2x, #{image_path('icons/brand_icon.png')} 1x"}/
             %h3 Identité visuelle
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          .col-md-6
-            %img{:src => "https://picsum.photos/30/30"}/
+          .col-md-6.mt-30
+            %img{:src => image_path('icons/web-design_icon.png'), :srcset => " #{image_path('icons/web-design_icon@2x.png')} 2x, #{image_path('icons/web-design_icon.png')} 1x"}/
             %h3 Web design
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
           .clearfix
-          .col-md-6
-            %img{:src => "https://picsum.photos/30/30"}/
+          .col-md-6.mt-30
+            %img{:src => image_path('icons/motion-design_icon.png'), :srcset => " #{image_path('icons/motion-design_icon@2x.png')} 2x, #{image_path('icons/motion-design_icon.png')} 1x"}/
             %h3 Motion design
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          .col-md-6
-            %img{:src => "https://picsum.photos/30/30"}/
+          .col-md-6.mt-30
+            %img{:src => image_path('icons/coding_icon.png'), :srcset => " #{image_path('icons/coding_icon@2x.png')} 2x, #{image_path('icons/coding_icon.png')} 1x"}/
             %h3 Développement web
             %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 
   .container
     .row.pt-30.pb-30
       .col-md-12
-        %h2 Mes réalisations
+        %h2.hideme Mes réalisations
 
         .row
           .col-md-12
@@ -74,8 +75,7 @@ per_page: 6
                 %li
                   = link_to "#{tag} (#{articles.size})", tag_path(tag), :class => "link btn btn-link text-uppercase"
 
-          .clearfix
-
+        .row
           - page_articles.each_with_index do |article, i|
             .col-sm-4.mb-30
               .block

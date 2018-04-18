@@ -22,6 +22,7 @@ body {
 h1, h2{
   font-family: 'DIN Pro Condensed Bold';
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -158,5 +159,31 @@ h3 {
   &:hover .fa{
     opacity: 1;
     @include transform(translate(10px, 0%));
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hideme {
+  opacity:0;
+}
+
+.show {
+  opacity: 1;
+  animation: show 0.5s 0.3s ease-in-out 1 both;
+}
+
+@for $i from 1 through 5 {
+  .hideme.show div[class^="col"]:nth-child(#{$i}) {
+    animation: show 0.5s #{$i*0.1+0.3}s ease-in-out 1 both;
   }
 }

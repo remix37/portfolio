@@ -45,58 +45,59 @@ per_page: 6
       -#       %span.fa.fa-dribbble
 
 .about-me#AboutMe
-  .container
-    .row.pt-30.pb-30
-      .col-md-8
-        %h2.hideme À propos de moi
-        %p Passionné depuis toujours par le design et la nouvelle technologie, je me suis autofomé pour être le plus compétent dans trois domaines : print, web et multimédia.
-        %p Après 4 ans d'expérience en entreprise, j'ai acquis une vision transversale de tous les projets prints et digitals.
-        .row.hideme
-          .col-sm-6.mt-30.mb-30
-            %img{:src => image_path('icons/brand_icon.png'), :srcset => " #{image_path('icons/brand_icon@2x.png')} 2x, #{image_path('icons/brand_icon.png')} 1x"}/
-            %h3 Communication visuelle
-            %ul
-              %li Analyse concurrencielle, benchmark,
-              %li Identité visuelle, charte graphique,
-              %li Déclinaison sur différents types de support.
+  .about-me-inner
+    .container
+      .row
+        .col-md-8.pt-30.pb-30{:style => "background: #FFF;"}
+          %h2.hideme À propos de moi
+          %p Passionné depuis toujours par le design et la nouvelle technologie, je me suis autofomé pour être le plus compétent dans trois domaines : le print, le web et le multimédia.
+          %p Après 4 ans d'expérience en entreprise, j'ai acquis une vision transversale de tous les projets prints et digitals.
+          .row.hideme
+            .col-sm-6.mt-30.mb-30
+              %img{:src => image_path('icons/brand_icon.png'), :srcset => " #{image_path('icons/brand_icon@2x.png')} 2x, #{image_path('icons/brand_icon.png')} 1x"}/
+              %h3 Communication visuelle
+              %ul
+                %li Analyse concurrencielle, benchmark,
+                %li Identité visuelle, charte graphique,
+                %li Déclinaison sur différents types de support.
 
-          .col-sm-6.mt-30.mb-30
-            %img{:src => image_path('icons/edition_icon.png'), :srcset => " #{image_path('icons/edition_icon@2x.png')} 2x, #{image_path('icons/edition_icon.png')} 1x"}/
-            %h3 Édition
-            %ul
-              %li Chemin de fer,
-              %li Illustrations, mise en page,
-              %li Digital publishing.
+            .col-sm-6.mt-30.mb-30
+              %img{:src => image_path('icons/edition_icon.png'), :srcset => " #{image_path('icons/edition_icon@2x.png')} 2x, #{image_path('icons/edition_icon.png')} 1x"}/
+              %h3 Édition
+              %ul
+                %li Chemin de fer,
+                %li Illustrations, mise en page,
+                %li Digital publishing.
 
-          .clearfix
+            .clearfix
 
-          .col-sm-6.mt-30.mb-30
-            %img{:src => image_path('icons/web-design_icon.png'), :srcset => " #{image_path('icons/web-design_icon@2x.png')} 2x, #{image_path('icons/web-design_icon.png')} 1x"}/
-            %h3 Web design
-            %ul
-              %li Wireframing, prototypage,
-              %li Design UI,
-              %li Export des assets.
+            .col-sm-6.mt-30.mb-30
+              %img{:src => image_path('icons/web-design_icon.png'), :srcset => " #{image_path('icons/web-design_icon@2x.png')} 2x, #{image_path('icons/web-design_icon.png')} 1x"}/
+              %h3 Web design
+              %ul
+                %li Wireframing, prototypage,
+                %li Design UI,
+                %li Export des assets.
 
-          .col-sm-6.mt-30.mb-30
-            %img{:src => image_path('icons/motion-design_icon.png'), :srcset => " #{image_path('icons/motion-design_icon@2x.png')} 2x, #{image_path('icons/motion-design_icon.png')} 1x"}/
-            %h3 Vidéo et animation
-            %ul
-              %li Storyboarding, script,
-              %li Dérushage, montage vidéo, étalonnage,
-              %li Motion design.
+            .col-sm-6.mt-30.mb-30
+              %img{:src => image_path('icons/motion-design_icon.png'), :srcset => " #{image_path('icons/motion-design_icon@2x.png')} 2x, #{image_path('icons/motion-design_icon.png')} 1x"}/
+              %h3 Vidéo et animation
+              %ul
+                %li Storyboarding, script,
+                %li Dérushage, montage vidéo, étalonnage,
+                %li Motion design.
 
-          .clearfix
+            .clearfix
 
-          .col-sm-12.mt-30.mb-30
-            %img{:src => image_path('icons/coding_icon.png'), :srcset => " #{image_path('icons/coding_icon@2x.png')} 2x, #{image_path('icons/coding_icon.png')} 1x"}/
-            %h3 Développement web
-            %ul
-              %li Intégration web,
-              %li Versioning, tests d'intégration, maintenance,
-              %li Mise en place d'un environnement admin.
+            .col-sm-12.mt-30.mb-30
+              %img{:src => image_path('icons/coding_icon.png'), :srcset => " #{image_path('icons/coding_icon@2x.png')} 2x, #{image_path('icons/coding_icon.png')} 1x"}/
+              %h3 Développement web
+              %ul
+                %li Intégration web,
+                %li Versioning, tests d'intégration, maintenance,
+                %li Mise en place d'un environnement admin.
 
-        -# %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/about-me"} En savoir plus
+          -# %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/about-me"} En savoir plus
 
   .container
     .row.pt-30.pb-30
@@ -105,7 +106,7 @@ per_page: 6
 
         .row
           - page_articles.each_with_index do |article, i|
-            .col-sm-4.mb-30
+            .col-sm-6.col-md-4.mb-30
               .block
                 = link_to article do
                   %img.img-responsive{:alt => "", :src => image_path("images/articles/#{article.data.thumbnail}")}/

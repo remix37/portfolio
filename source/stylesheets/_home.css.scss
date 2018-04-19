@@ -4,7 +4,15 @@
 }
 
 .about-me {
-  @include retina('../images/home/bg-about-me.png', 2, 33% auto, right top no-repeat);
+  @media screen and (min-width: $screen-lg-min){
+    @include retina('../images/home/bg-about-me.png', 2, 33% auto, right top no-repeat);
+  }
+}
+
+.about-me-inner {
+  @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    @include retina('../images/home/bg-about-me.png', 2, auto 100%, right center no-repeat);
+  }
 }
 
 .particles{
@@ -74,7 +82,7 @@
   animation: show 0.5s 0.3s ease-in-out 1 both;
 }
 
-@for $i from 1 through 5 {
+@for $i from 1 through 7 {
   .hideme.show div[class^="col"]:nth-child(#{$i}) {
     animation: show 0.5s #{$i*0.1+0.8}s ease-in-out 1 both;
   }

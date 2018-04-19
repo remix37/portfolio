@@ -46,9 +46,44 @@
   line-height: 1em;
   font-weight: 700;
   margin-top: 0;
+  animation: show 1s 0.3s ease-in-out 1 both;
 }
 
 #particles-js {
   @include retina('../images/home/bg-homepage.png', 2, cover, center center no-repeat);
   height: 100%;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hideme {
+  opacity:0;
+}
+
+.show {
+  opacity: 1;
+  animation: show 0.5s 0.3s ease-in-out 1 both;
+}
+
+@for $i from 1 through 5 {
+  .hideme.show div[class^="col"]:nth-child(#{$i}) {
+    animation: show 0.5s #{$i*0.1+0.8}s ease-in-out 1 both;
+  }
+}
+
+.btn-lg{
+  font-weight: 500;
+  border: 1px solid lighten($rr-color, 25%);
+  border-radius: 0;
+  @include transition(all);
+  font-family: 'DIN Pro Condensed Medium';
 }

@@ -1,6 +1,6 @@
 .work-banner{
   padding: 100px 0;
-  @include retina('../images/home/bg-works.png', 2, cover, center center no-repeat);
+  @include retina('../images/works/bg-works.png', 2, cover, center center no-repeat);
 }
 
 .work-body-inner img{

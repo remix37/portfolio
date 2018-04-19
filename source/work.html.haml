@@ -1,0 +1,45 @@
+---
+
+pageable: true
+per_page: 6
+
+---
+
+.container
+  .row.mt-60
+    .col-md-12.mb-15
+      %ul.list-inline
+        %li
+          %a.link.btn.btn-link.text-uppercase{:href => "/projects"} Tout
+        - blog.tags.each do |tag, articles|
+          %li
+            = link_to "#{tag}", tag_path(tag), :class => "link btn btn-link text-uppercase", :title => "#{tag}"
+
+    .clearfix
+
+    - page_articles.each_with_index do |article, i|
+      .col-md-4.col-sm-6.mb-30
+        .block
+          = link_to article do
+            %img.img-responsive{:alt => "", :src => image_path("images/articles/#{article.data.thumbnail}")}/
+            .block-inner
+              %h3= article.title
+              %span.btn.btn-link.link-work.text-uppercase Voir plus
+
+  - if paginate && num_pages > 1
+    .row
+      .col-sm-5.col-xs-6
+        %p
+          - if prev_page
+            = link_to prev_page, :class => "btn btn-link text-uppercase btn-prev" do
+              %span.fa.fa-long-arrow-left
+              Page précédente
+      .col-sm-2.hidden-xs
+        %p.text-center.pagination
+          Page #{page_number} sur #{num_pages}
+      .col-sm-5.col-xs-6
+        %p
+          - if next_page
+            = link_to next_page, :class => "btn btn-link text-uppercase pull-right btn-next" do
+              Page suivante
+              %span.fa.fa-long-arrow-right

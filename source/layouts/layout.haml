@@ -14,12 +14,14 @@
   %body
     = partial "partials/header"
 
-    = yield
+    .work-banner.mt-80
+      .container
+        .row
+          .col-sm-12
+            %h1.mt-0.mb-0.white
+              = current_page.data.title
 
-    -# %h2 By Year
-    -# %ol
-    -#   - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-    -#     %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
+    = yield
 
     = partial "partials/footer"
     = javascript_include_tag "site"

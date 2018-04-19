@@ -17,63 +17,91 @@ per_page: 6
     .clearfix
     .row.description.pt-60.pb-60
       .col-md-5
-        %p.text-uppercase.post.hideme
+        %p.text-uppercase.post
           %strong
             Designer UX/UI
           -# %br
           -# Developer Web Front End
       .col-md-6
-        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna mi. Duis eget consequat turpis. Morbi consequat lectus sed enim tempus cursus quis sed mauris.
-        %p Vestibulum ac lectus at metus sollicitudin scelerisque. Nam eget vestibulum elit. Cras vestibulum tortor ut tincidunt sodales. Nullam vestibulum pretium tortor ac ultricies. Proin lectus sapien, sodales sed lectus eget, ullamcorper elementum mi. In euismod tempus velit, eget malesuada mi varius tristique.
+        %p Jeune Designer basé sur Paris, j'ai suivi un premier cursus dans l'édition numérique et spécialisé par la suite dans la conception et le développement web.
+        %p
+          J'aime porter à croire que l'on peut tout designer quel que soit le type de média.
+          Ma philosophie :
+          %em.text-underline Le design, c'est comme la bar de fer, on peut tout faire.
+
+        %p Constamment à la recherche de nouvelles opportunités, n'hésitez pas à me contacter pour me faire partager un projet.
+        %p.mt-30.mb-30
+          %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/contact"} Me contacter
     .clearfix
     .row.scroll
       .col-xs-2.col-xs-offset-5.height-100
         %a{:href => "#AboutMe"}
           %img.img-responsive.icon-scroll{:src => image_path('images/home/scroll.png'), :srcset => " #{image_path('images/home/scroll@2x.png')} 2x, #{image_path('images/home/scroll.png')} 1x"}/
-      .col-xs-5.height-100
-        %ul.list-inline{:style => "bottom: 30px; position: absolute; right: 30px;"}
-          %li
-            %span.fa.fa-linkedin
-          %li
-            %span.fa.fa-dribbble
+      -# .col-xs-5.height-100
+      -#   %ul.list-inline{:style => "bottom: 30px; position: absolute; right: 30px;"}
+      -#     %li
+      -#       %span.fa.fa-linkedin
+      -#     %li
+      -#       %span.fa.fa-dribbble
 
 .about-me#AboutMe
   .container
     .row.pt-30.pb-30
-      .col-md-7
+      .col-md-8
         %h2.hideme À propos de moi
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        %p Passionné depuis toujours par le design et la nouvelle technologie, je me suis autofomé pour être le plus compétent dans trois domaines : print, web et multimédia.
+        %p Après 4 ans d'expérience en entreprise, j'ai acquis une vision transversale de tous les projets prints et digitals.
         .row.hideme
-          .col-md-6.mt-30
+          .col-sm-6.mt-30.mb-30
             %img{:src => image_path('icons/brand_icon.png'), :srcset => " #{image_path('icons/brand_icon@2x.png')} 2x, #{image_path('icons/brand_icon.png')} 1x"}/
-            %h3 Identité visuelle
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          .col-md-6.mt-30
+            %h3 Communication visuelle
+            %ul
+              %li Analyse concurrencielle, benchmark,
+              %li Identité visuelle, charte graphique,
+              %li Déclinaison sur différents types de support.
+
+          .col-sm-6.mt-30.mb-30
+            %img{:src => image_path('icons/edition_icon.png'), :srcset => " #{image_path('icons/edition_icon@2x.png')} 2x, #{image_path('icons/edition_icon.png')} 1x"}/
+            %h3 Édition
+            %ul
+              %li Chemin de fer,
+              %li Illustrations, mise en page,
+              %li Digital publishing.
+
+          .clearfix
+
+          .col-sm-6.mt-30.mb-30
             %img{:src => image_path('icons/web-design_icon.png'), :srcset => " #{image_path('icons/web-design_icon@2x.png')} 2x, #{image_path('icons/web-design_icon.png')} 1x"}/
             %h3 Web design
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          .clearfix
-          .col-md-6.mt-30
+            %ul
+              %li Wireframing, prototypage,
+              %li Design UI,
+              %li Export des assets.
+
+          .col-sm-6.mt-30.mb-30
             %img{:src => image_path('icons/motion-design_icon.png'), :srcset => " #{image_path('icons/motion-design_icon@2x.png')} 2x, #{image_path('icons/motion-design_icon.png')} 1x"}/
-            %h3 Motion design
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          .col-md-6.mt-30
+            %h3 Vidéo et animation
+            %ul
+              %li Storyboarding, script,
+              %li Dérushage, montage vidéo, étalonnage,
+              %li Motion design.
+
+          .clearfix
+
+          .col-sm-12.mt-30.mb-30
             %img{:src => image_path('icons/coding_icon.png'), :srcset => " #{image_path('icons/coding_icon@2x.png')} 2x, #{image_path('icons/coding_icon.png')} 1x"}/
             %h3 Développement web
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+            %ul
+              %li Intégration web,
+              %li Versioning, tests d'intégration, maintenance,
+              %li Mise en place d'un environnement admin.
+
+        -# %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/about-me"} En savoir plus
 
   .container
     .row.pt-30.pb-30
       .col-md-12
         %h2.hideme Mes réalisations
-
-        .row
-          .col-md-12
-            %ul.list-inline
-              - blog.tags.each do |tag, articles|
-                %li
-                  = link_to "#{tag} (#{articles.size})", tag_path(tag), :class => "link btn btn-link text-uppercase"
 
         .row
           - page_articles.each_with_index do |article, i|
@@ -84,3 +112,6 @@ per_page: 6
                   .block-inner
                     %h3= article.title
                     %span.btn.btn-link.link-work.text-uppercase Voir plus
+        .row
+          .col-md-12
+            %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/projects"} Voir d'autres réalisations

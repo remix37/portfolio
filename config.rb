@@ -11,7 +11,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 page "/index.html", layout: "layout-home"
-page "/tags/*.html", layout: "layout-tag"
+page "/works/*.html", layout: "layout-work"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
@@ -28,7 +28,7 @@ activate :blog do |blog|
   blog.permalink = "works/{title}.html"
   # Matcher for blog source files
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
-  # blog.taglink = "tags/{tag}.html"
+  blog.taglink = "works/{tag}.html"
   blog.layout = "layout-articles"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
@@ -37,12 +37,12 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  blog.tag_template = "work.html"
+  # blog.calendar_template = "calendar.html"
 
   # Enable pagination
   blog.paginate = true
-  blog.per_page = 10
+  blog.per_page = 6
   blog.page_link = "page/{num}"
 end
 

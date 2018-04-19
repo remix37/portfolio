@@ -12,12 +12,20 @@
 
     / Collect the nav links, forms, and other content for toggling
     #NavbarCollapse.collapse.navbar-collapse
-      %ul.nav.navbar-nav
+      %ul.nav.navbar-nav.navbar-left
+        -# %li
+        -#   %a.link{:href => "/"} Accueil
+        -# %li
+        -#   %a.link{:href => "/about-me"} À propos de moi
         %li
-          %a.link{:href => "/"} Accueil
-        %li
-          %a.link{:href => "/about-me"} À propos de moi
-        %li
-          %a.link{:href => "/works"} Réalisations
+          %a.link{:href => "/projects"} Mes réalisations
         %li
           %a.link{:href => "/contact"} Contact
+
+      %ul.nav.navbar-nav.navbar-right
+        %li.pl-0.pr-0
+          %a.link{:href => "https://github.com/remix37"}
+            %span.fa.fa-github
+        %li.pl-0.pr-0
+          %a.link{:href => "/"}
+            %span.fa.fa-linkedin

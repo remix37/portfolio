@@ -1,0 +1,78 @@
+// Strikethrough hover
+
+.link {
+  position: relative;
+  &:hover {
+    text-decoration: none;
+  }
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -1.5px;
+    background: #fff;
+  }
+  &:before {
+    left: 0px;
+  }
+  &:after {
+    right: 0px;
+    background: $rr-color;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:hover:before {
+    background: $rr-color;
+    width: 100%;
+    transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  &:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+}
+
+.link.active{
+  background-color: $rr-color;
+  color: $white-color;
+  &:before {
+    display: none;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.btn-prev ,
+.btn-next {
+  .fa{
+    opacity: 0;
+    position: relative;
+    @include transition(all);
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-prev {
+  &:hover .fa{
+    opacity: 1;
+    @include transform(translate(-10px, 0%));
+  }
+}
+
+.btn-next {
+  &:hover .fa{
+    opacity: 1;
+    @include transform(translate(10px, 0%));
+  }
+}
+
+.pagination {
+  padding: 6px 0;
+  margin: 0;
+}

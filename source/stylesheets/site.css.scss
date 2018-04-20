@@ -85,6 +85,9 @@ h3 {
 }
 .block-inner {
   padding: 0 15px 15px;
+  h3{
+    min-height: 40px;
+  }
 }
 
 .text-underline {

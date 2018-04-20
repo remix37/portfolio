@@ -1,9 +1,10 @@
 ---
 
-title: Landing pages KelDoc
+title: Landing page Retour en absurdie
 date: 2018-04-06
 tags: web
-thumbnail: thumbnail-landing-pages-keldoc.png
+thumbnail: thumbnail-retourenabsurdie.png
+image: retourenabsurdie.png
 
 ---
 

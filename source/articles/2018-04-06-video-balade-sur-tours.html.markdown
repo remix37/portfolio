@@ -1,10 +1,10 @@
 ---
 
-title: Vidéo Amplibook
+title: Balade sur Tours
 date: 2018-04-06
 tags: video
-thumbnail: thumbnail-video-amplibook.png
-video: https://www.youtube.com/embed/fVUpR4kI86c
+thumbnail: thumbnail-balade-sur-tours.png
+video: https://www.youtube.com/embed/kkinhY4-amo
 
 ---
 
@@ -16,7 +16,6 @@ Amplibook
 
 ---
 
-Vidéo de présentation de la startup française Amplibook
 
 ---
 

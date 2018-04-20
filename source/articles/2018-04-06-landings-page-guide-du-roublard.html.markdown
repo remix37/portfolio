@@ -1,9 +1,10 @@
 ---
 
-title: Landing pages KelDoc
+title: Landing page Guide du Roublard
 date: 2018-04-06
 tags: web
-thumbnail: thumbnail-landing-pages-keldoc.png
+thumbnail: thumbnail-guide-du-roublard.png
+image: guide-du-roublard.png
 
 ---
 

@@ -11,10 +11,7 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
-    :css
-      /* .work-banner:before {
-        background-image: url('../../images/articles/#{current_article.data.thumbnail}');
-      } */
+
   %body
     = partial "partials/header"
     = partial "partials/preload"
@@ -23,7 +20,6 @@
       .container
         .row
           .col-sm-6
-            -# %img.img-responsive{:alt => "", :src => image_path("images/articles/#{current_article.data.thumbnail}")}/
             %h1.mt-0.mb-0
               = current_article.title
           .col-sm-6
@@ -35,7 +31,13 @@
       .container
         .row
           .col-md-8.mt-60
-            %img.img-responsive{:alt => "", :src => image_path("articles/#{current_article.data.image}")}/
+            - if current_article.data.image != nil
+              %img.img-responsive{:alt => "", :src => image_path("works/#{current_article.data.image}")}/
+            - elsif current_article.data.video != nil
+              .embed-responsive.embed-responsive-16by9
+                %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
+            - else
+              %p nil
 
           .col-md-4.work-body-inner.mt-60
             = yield
@@ -45,6 +47,6 @@
     :javascript
       $(document).ready(function() {
         $(".work-body-inner strong").addClass("text-uppercase");
-        $(".work-body-inner ul").addClass("list-inline");
+        // $(".work-body-inner ul").addClass("list-inline");
         $(".work-body-inner img").height(30);
       });

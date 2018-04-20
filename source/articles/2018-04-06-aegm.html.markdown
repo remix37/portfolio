@@ -1,0 +1,15 @@
+---
+
+title: Communication AEGM
+date: 2018-04-06
+tags: print
+thumbnail: thumbnail-aegm.png
+
+---
+
+
+---
+
+![Photoshop](/images/icons/photoshop.svg)
+![Illustrator](/images/icons/illustrator.svg)
+![Illustrator](/images/icons/indesign.svg)

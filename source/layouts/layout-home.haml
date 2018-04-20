@@ -20,3 +20,7 @@
     = partial "partials/footer"
     = javascript_include_tag "site"
     = javascript_include_tag "home"
+    :javascript
+      $(document).ready(function() {
+        $(".post").addClass("animate");
+      });

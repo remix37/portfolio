@@ -54,6 +54,9 @@
   line-height: 1em;
   font-weight: 700;
   margin-top: 0;
+}
+
+.post.animate{
   animation: show 1s 0.3s ease-in-out 1 both;
 }
 
@@ -82,7 +85,7 @@
   animation: show 0.5s 0.3s ease-in-out 1 both;
 }
 
-@for $i from 1 through 7 {
+@for $i from 1 through 2 {
   .hideme.show div[class^="col"]:nth-child(#{$i}) {
     animation: show 0.5s #{$i*0.1+0.8}s ease-in-out 1 both;
   }

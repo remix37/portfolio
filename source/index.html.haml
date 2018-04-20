@@ -69,8 +69,7 @@ per_page: 6
                 %li Illustrations, mise en page,
                 %li Digital publishing.
 
-            .clearfix
-
+          .row.hideme
             .col-sm-6.mt-30.mb-30
               %img{:src => image_path('icons/web-design_icon.png'), :srcset => " #{image_path('icons/web-design_icon@2x.png')} 2x, #{image_path('icons/web-design_icon.png')} 1x"}/
               %h3 Web design
@@ -87,8 +86,7 @@ per_page: 6
                 %li Dérushage, montage vidéo, étalonnage,
                 %li Motion design.
 
-            .clearfix
-
+          .row.hideme
             .col-sm-12.mt-30.mb-30
               %img{:src => image_path('icons/coding_icon.png'), :srcset => " #{image_path('icons/coding_icon@2x.png')} 2x, #{image_path('icons/coding_icon.png')} 1x"}/
               %h3 Développement web
@@ -109,7 +107,7 @@ per_page: 6
             .col-sm-6.col-md-4.mb-30
               .block
                 = link_to article do
-                  %img.img-responsive{:alt => "", :src => image_path("images/articles/#{article.data.thumbnail}")}/
+                  %img.img-responsive{:alt => "", :src => image_path("images/works/#{article.data.thumbnail}")}/
                   .block-inner
                     %h3= article.title
                     %span.btn.btn-link.link-work.text-uppercase Voir plus

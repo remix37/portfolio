@@ -8,11 +8,9 @@ video: https://www.youtube.com/embed/fVUpR4kI86c
 
 ---
 
-**Client :**
-Amplibook
+**Client :** Amplibook
 
-**Date :**
-01/08/2014
+**Date :** 01/08/2014
 
 ---
 

@@ -8,11 +8,9 @@ image: site-keldoc.png
 
 ---
 
-**Client :**
-KelDoc
+**Client :** KelDoc
 
-**Date :**
-01/01/2018
+**Date :** 01/01/2018
 
 ---
 

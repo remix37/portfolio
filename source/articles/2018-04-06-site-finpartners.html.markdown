@@ -8,11 +8,9 @@ image: finpartners.png
 
 ---
 
-**Client :**
-Fin Partners
+**Client :** Fin Partners
 
-**Date :**
-01/07/2018 (Déploiement du site)
+**Date :** 01/07/2018 (Déploiement du site)
 
 ---
 

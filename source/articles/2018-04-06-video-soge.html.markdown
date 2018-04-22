@@ -8,13 +8,11 @@ video: https://www.youtube.com/embed/Sc9ZigYzrtM
 
 ---
 
-**Client :**
-Société Générale
+**Client :** Société Générale
 
 [**Lien de l'offre**](https://professionnels.societegenerale.fr/essentiel_quotidien/offre-keldoc.html)
 
-**Date :**
-01/03/2018
+**Date :** 01/03/2018
 
 ---
 

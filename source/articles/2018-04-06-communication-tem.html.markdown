@@ -1,6 +1,6 @@
 ---
 
-title: Affiche TEM
+title: Communication TEM
 date: 2018-04-06
 tags: print
 thumbnail: thumbnail-affiche-TEM.png
@@ -8,6 +8,11 @@ image: affiche-TEM.png
 
 ---
 
+**Client :** Télécom École de Management
+
+---
+
+Réalisation d'un affiche et de bannière web pour l'événement du 16e Challenge Projets d'Entreprendre.
 
 ---
 

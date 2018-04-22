@@ -8,6 +8,11 @@ image: guide-du-roublard.png
 
 ---
 
+**Client :** Amplibook
+
+---
+
+Réalisation d'une Landing Page promouvant le livre numérique "Guide du Roublard" de Guillaume Michels.
 
 ---
 

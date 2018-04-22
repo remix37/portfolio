@@ -7,6 +7,10 @@ thumbnail: thumbnail-agenda-keldoc.png
 
 ---
 
+**Client :** KelDoc
+
+---
+
 Refonte du design de l'agenda KelDoc, outil destiné à tout professionnel de santé.
 
 ---

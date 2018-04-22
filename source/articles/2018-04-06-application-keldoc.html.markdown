@@ -7,7 +7,11 @@ thumbnail: thumbnail-application-keldoc.png
 
 ---
 
-Proposition de la refonte du design de l'application KelDoc.
+**Client :** KelDoc
+
+---
+
+Proposition de la refonte du design de l'application KelDoc dédié aux patients.
 
 ---
 

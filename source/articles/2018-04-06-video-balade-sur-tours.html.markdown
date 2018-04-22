@@ -8,14 +8,11 @@ video: https://www.youtube.com/embed/kkinhY4-amo
 
 ---
 
-**Client :**
-Amplibook
-
-**Date :**
-01/08/2014
+**Date :** 01/08/2014
 
 ---
 
+Projet d'étude réalisé en fin de cursus à l'école numérique ESTEN.
 
 ---
 

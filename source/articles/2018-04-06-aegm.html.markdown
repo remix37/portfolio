@@ -4,9 +4,15 @@ title: Communication AEGM
 date: 2018-04-06
 tags: print
 thumbnail: thumbnail-aegm.png
+image: thumbnail-aegm.png
 
 ---
 
+**Client :** A.E.G.M "Vos Experts-Comptables"
+
+---
+
+Réalisation d'une pochette avec l'insertion d'une carte de visite et d'un kakémono pour un Expert Comptable.
 
 ---
 

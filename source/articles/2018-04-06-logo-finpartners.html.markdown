@@ -8,6 +8,11 @@ image: thumbnail-logo-finpartners.png
 
 ---
 
+**Client :** Fin Partners
+
+---
+
+Réalisation d'un logo pour le consultant Fin Partnes.
 
 ---
 

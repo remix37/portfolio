@@ -8,6 +8,7 @@ image: aux-noms-de-tours.png
 
 ---
 
+Projet éditorial réalisé en première année à l'école numérique ESTEN.
 
 ---
 

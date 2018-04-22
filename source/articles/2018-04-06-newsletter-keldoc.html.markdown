@@ -8,8 +8,7 @@ image: newsletter-keldoc.png
 
 ---
 
-**Client :**
-KelDoc
+**Client :** KelDoc
 
 **Date :**
 01/01/2018

@@ -8,6 +8,11 @@ image: thumbnail-logo-maitai.png
 
 ---
 
+**Client :** MAI TAI
+
+---
+
+Réalisation d'un logo pour le restaurant thaïlandais Mai Tai à Tours.
 
 ---
 

@@ -8,6 +8,12 @@ image: retourenabsurdie.png
 
 ---
 
+**Client :** Édition Plon
+
+---
+
+Réalisation d'une Landing Page promouvant le livre numérique "Retour en Absurdie" de Stéphane de Groodt.
+
 
 ---
 

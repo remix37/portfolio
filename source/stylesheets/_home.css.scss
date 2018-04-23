@@ -62,7 +62,7 @@
 }
 
 .post.animate{
-  animation: show 1s 0.3s ease-in-out 1 both;
+  animation: post 2s 0.3s ease-in-out 1 both;
 }
 
 #particles-js {
@@ -72,27 +72,47 @@
 
 @keyframes show {
   0% {
-    opacity: 0;
-    transform: translateY(-10px);
+    opacity:0;
+    // transform: translateY(-10px);
   }
   100% {
-    opacity: 1;
+    opacity:1;
+    // transform: translateY(0);
+  }
+}
+
+@keyframes post {
+  0% {
+    opacity:0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity:1;
     transform: translateY(0);
   }
 }
 
+
 .hideme {
   opacity:0;
+  @media screen and (max-width: $screen-xs-max){
+    opacity:1;
+  }
 }
 
 .show {
   opacity: 1;
-  animation: show 0.5s 0.3s ease-in-out 1 both;
+  @media screen and (min-width: $screen-sm-min){
+    animation: show 0.5s 0.3s ease-in-out 1 both;
+  }
 }
 
 @for $i from 1 through 2 {
   .hideme.show div[class^="col"]:nth-child(#{$i}) {
-    animation: show 0.5s #{$i*0.1+0.8}s ease-in-out 1 both;
+    @media screen and (min-width: $screen-sm-min){
+      animation: show 0.5s #{$i*0.1+0.6}s ease-in-out 1 both;
+    }
   }
 }
 

@@ -1,7 +1,7 @@
 ---
 
 title: Vidéo Amplibook
-date: 2018-04-06
+date: 2018-01-01
 tags: video
 thumbnail: thumbnail-video-amplibook.png
 video: https://www.youtube.com/embed/fVUpR4kI86c

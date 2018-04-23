@@ -1,7 +1,7 @@
 ---
 
 title: Communication TEM
-date: 2018-04-06
+date: 2018-01-01
 tags: print
 thumbnail: thumbnail-affiche-TEM.png
 image: affiche-TEM.png

@@ -1,7 +1,7 @@
 ---
 
 title: Vidéo Société Générale
-date: 2018-04-06
+date: 2018-01-01
 tags: video
 thumbnail: thumbnail-video-soge.png
 video: https://www.youtube.com/embed/Sc9ZigYzrtM

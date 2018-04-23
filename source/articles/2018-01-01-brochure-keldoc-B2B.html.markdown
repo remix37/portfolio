@@ -1,7 +1,7 @@
 ---
 
 title: Brochure KelDoc B2B
-date: 2018-04-06
+date: 2018-01-01
 tags: print
 thumbnail: thumbnail-brochure-keldoc-B2B.png
 image: thumbnail-brochure-keldoc-B2B.png

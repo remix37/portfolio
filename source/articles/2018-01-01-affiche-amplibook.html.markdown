@@ -1,7 +1,7 @@
 ---
 
 title: Affiche Amplibook
-date: 2018-04-06
+date: 2018-01-01
 tags: print
 thumbnail: thumbnail-affiche-amplibook.png
 image: thumbnail-affiche-amplibook.png

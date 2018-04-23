@@ -1,7 +1,7 @@
 ---
 
 title: Balade sur Tours
-date: 2018-04-06
+date: 2018-01-01
 tags: video
 thumbnail: thumbnail-balade-sur-tours.png
 video: https://www.youtube.com/embed/kkinhY4-amo

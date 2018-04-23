@@ -1,7 +1,7 @@
 ---
 
 title: Landing Page Business 3G
-date: 2018-04-06
+date: 2018-01-01
 tags: web
 thumbnail: thumbnail-deuxieme-revenu-internet.png
 image: deuxieme-revenu-internet.png

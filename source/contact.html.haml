@@ -4,8 +4,45 @@ title: Contact
 
 ---
 
-.container
-  .row.mt-60
+:javascript
+  window.onload = (function(){
+    if(window.location.hash == '#thank-you'){
+      document.getElementById('thank-you-message').className = 'alert alert-success';
+    }
+  })
 
-    %h1
-      Contact
+
+.container
+  .row
+    .col-md-8.col-md-offset-2.mt-60
+      #thank-you-message.hidden{:role => "alert"}
+        Merci de m'avoir contacté, je vous répondrai dès que possible. :)
+  %form.row{:action => "https://getsimpleform.com/messages?form_api_token=dc387a7a7d80cf9792eabe33f4af2a25", :method => "post", :enctype => "multipart/form-data"}
+
+    %input{:name => "redirect_to", :type => "hidden", :value => "http://localhost:4567/contact/#thank-you"}/
+
+    %input{:name => "_folder", :type => "hidden", :value => "quotes"}/
+    %input{:name => "_spam", :type => "hidden", :value => "message"}/
+
+    .col-md-4.col-md-offset-2
+      .form-group
+        %input.form-control{:name => "name", :placeholder => "Prénom", :type => "text", :required => "", "data-validation" => "required"}/
+
+    .col-md-4
+      .form-group
+        %input.form-control{:name => "last name", :placeholder => "Nom", :type => "text", :required => "", "data-validation" => "required"}/
+
+    .clearfix
+
+    .col-md-8.col-md-offset-2
+      .form-group
+        %input.form-control{:name => "mail", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
+
+    .clearfix
+
+    .col-md-8.col-md-offset-2
+      .form-group
+        %textarea.form-control{:name => "message", :placeholder => "Message", :rows => "3"}
+
+
+      %button.btn.btn-link.link.text-uppercase.btn-lg{:type => "Submit"} Envoyer

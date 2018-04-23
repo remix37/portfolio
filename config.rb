@@ -11,6 +11,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 page "/index.html", layout: "layout-home"
+page "/contact.html", layout: "layout-contact"
 page "/works/*.html", layout: "layout-works"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)

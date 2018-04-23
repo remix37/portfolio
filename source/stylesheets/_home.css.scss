@@ -22,13 +22,18 @@
 }
 
 .description {
-  height: 35vh;
-  min-height: 224px;
+  padding: 30px 0 120px;
+  @media screen and (min-width: $screen-sm-min){
+    min-height: 224px;
+    height: 35vh;
+  }
 }
 
 .scroll {
-  height: 15vh;
-  min-height: 96px;
+  @media screen and (min-width: $screen-sm-min){
+    min-height: 96px;
+    height: 15vh;
+  }
 }
 
 .icon-scroll{

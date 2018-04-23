@@ -93,3 +93,14 @@ h3 {
 .text-underline {
   text-decoration: underline;
 }
+
+.icons-socials{
+  span.fa {
+    font-size: 1.2em;
+  }
+  @media screen and (min-width: $screen-sm-min){
+    li{
+      padding: 0;
+    }
+  }
+}

@@ -4,6 +4,7 @@ title: Agenda KelDoc
 date: 2018-01-01
 tags: application
 thumbnail: thumbnail-agenda-keldoc.png
+image: thumbnail-agenda-keldoc.png
 
 ---
 

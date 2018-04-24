@@ -4,6 +4,7 @@ title: Application KelDoc
 date: 2018-01-01
 tags: application
 thumbnail: thumbnail-application-keldoc.png
+image: thumbnail-application-keldoc.png
 
 ---
 

@@ -38,7 +38,11 @@
     .work-body.mb-60
       .container
         .row
-          .col-md-8.mt-60
+
+          .col-md-4.col-md-push-8.work-body-inner.mt-60
+            = yield
+
+          .col-md-8.col-md-pull-4.mt-60
             - if current_article.data.image != nil
               %img.img-responsive{:alt => "", :src => image_path("works/#{current_article.data.image}")}/
             - elsif current_article.data.video != nil
@@ -46,9 +50,6 @@
                 %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
             - else
               %p nil
-
-          .col-md-4.work-body-inner.mt-60
-            = yield
 
     = partial "partials/footer"
     = javascript_include_tag "site"

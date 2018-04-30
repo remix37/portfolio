@@ -23,10 +23,11 @@ Réalisation de 3 landing pages pour KelDoc.
 ---
 
 - Wireframing
+- Prototypage (Marvelapp)
 - Webdesign
 - Intégration
 - Browser testing
-  - Compatibilité sur des anciens navigateurs
+- Analyse et A/B testing (Hotjar)
 
 ---
 

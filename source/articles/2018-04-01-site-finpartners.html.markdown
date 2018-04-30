@@ -1,7 +1,7 @@
 ---
 
 title: Site Fin Partners
-date: 2018-01-01
+date: 2018-04-01
 tags: web
 thumbnail: thumbnail-finpartners.png
 image: finpartners.png
@@ -18,9 +18,15 @@ Site vitrine pour un consultant SAP.
 
 ---
 
+- Benchmark
 - Wireframes
 - Webdesign
 - Intégration
+  - Middleman (framework Ruby)
+  - Haml, Scss, JS
+  - Bootstrap, Font awesome
+- Versioning
+- Déploiement (Netlify)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 
 title: Site KelDoc
-date: 2018-01-01
+date: 2018-04-01
 tags: web
 thumbnail: thumbnail-site-keldoc.png
 image: site-keldoc.png
@@ -21,6 +21,7 @@ Proposition de la refonte du site KelDoc.
 - Benchmark
 - Wireframes
 - Webdesign
+- Livraison des assets
 
 ---
 

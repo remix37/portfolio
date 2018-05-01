@@ -11,6 +11,7 @@
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     %link{:href => "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
+    = stylesheet_link_tag "work"
     / Global site tag (gtag.js) - Google Analytics
     %script{:async => "", :src => "https://www.googletagmanager.com/gtag/js?id=UA-118045796-1"}
     :javascript
@@ -44,7 +45,8 @@
 
           .col-md-8.col-md-pull-4.mt-60
             - if current_article.data.image != nil
-              %img.img-responsive{:alt => "", :src => image_path("works/#{current_article.data.image}")}/
+              %a.image-link{:href => image_path("works/#{current_article.data.image}")}
+                %img.img-responsive{:alt => "", :src => image_path("works/#{current_article.data.image}")}/
             - elsif current_article.data.video != nil
               .embed-responsive.embed-responsive-16by9
                 %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
@@ -53,9 +55,4 @@
 
     = partial "partials/footer"
     = javascript_include_tag "site"
-    :javascript
-      $(document).ready(function() {
-        $(".work-body-inner strong").addClass("text-uppercase");
-        // $(".work-body-inner ul").addClass("list-inline");
-        $(".work-body-inner img").height(30);
-      });
+    = javascript_include_tag "work"

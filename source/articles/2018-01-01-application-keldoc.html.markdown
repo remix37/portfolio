@@ -4,7 +4,7 @@ title: Application KelDoc
 date: 2018-01-01
 tags: application
 thumbnail: thumbnail-application-keldoc.png
-image: thumbnail-application-keldoc.png
+image: app-keldoc.png
 
 ---
 
@@ -13,6 +13,11 @@ image: thumbnail-application-keldoc.png
 ---
 
 Proposition de la refonte du design de l'application KelDoc dédié aux patients.
+
+---
+
+- Wireframes sur Balsamiq Mockups
+- Webdesign
 
 ---
 

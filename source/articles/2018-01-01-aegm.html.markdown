@@ -3,8 +3,8 @@
 title: Communication AEGM
 date: 2018-01-01
 tags: print
-thumbnail: thumbnail-aegm.png
-image: thumbnail-aegm.png
+thumbnail: works/thumbnail-aegm.png
+image: works/thumbnail-aegm.png
 
 ---
 

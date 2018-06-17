@@ -3,8 +3,8 @@
 title: Logo Fin Partners
 date: 2018-01-01
 tags: Logotype
-thumbnail: thumbnail-logo-finpartners.png
-image: thumbnail-logo-finpartners.png
+thumbnail: works/thumbnail-logo-finpartners.png
+image: works/thumbnail-logo-finpartners.png
 
 ---
 

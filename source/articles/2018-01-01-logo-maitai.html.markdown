@@ -3,8 +3,8 @@
 title: Logo Mai Tai
 date: 2018-01-01
 tags: Logotype
-thumbnail: thumbnail-logo-maitai.png
-image: thumbnail-logo-maitai.png
+thumbnail: works/thumbnail-logo-maitai.png
+image: works/thumbnail-logo-maitai.png
 
 ---
 

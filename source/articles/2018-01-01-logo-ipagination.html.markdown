@@ -3,8 +3,8 @@
 title: Logo Ipagination
 date: 2018-01-01
 tags: Logotype
-thumbnail: thumbnail-logo-ipagination.png
-image: thumbnail-logo-ipagination.png
+thumbnail: works/thumbnail-logo-ipagination.png
+image: works/thumbnail-logo-ipagination.png
 
 ---
 

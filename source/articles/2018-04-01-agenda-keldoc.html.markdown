@@ -3,8 +3,8 @@
 title: Agenda KelDoc
 date: 2018-04-01
 tags: application
-thumbnail: thumbnail-agenda-keldoc.png
-image: agenda-keldoc.png
+thumbnail: works/thumbnail-agenda-keldoc.png
+image: works/agenda-keldoc.png
 
 ---
 

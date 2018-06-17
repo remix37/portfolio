@@ -3,8 +3,8 @@
 title: Landing page Guide du Roublard
 date: 2018-01-01
 tags: web
-thumbnail: thumbnail-guide-du-roublard.png
-image: guide-du-roublard.png
+thumbnail: works/thumbnail-guide-du-roublard.png
+image: works/guide-du-roublard.png
 
 ---
 

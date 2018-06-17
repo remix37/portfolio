@@ -3,8 +3,8 @@
 title: Application KelDoc
 date: 2018-01-01
 tags: application
-thumbnail: thumbnail-application-keldoc.png
-image: app-keldoc.png
+thumbnail: works/thumbnail-application-keldoc.png
+image: works/app-keldoc.png
 
 ---
 

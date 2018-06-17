@@ -45,8 +45,8 @@
 
           .col-md-8.col-md-pull-4.mt-60
             - if current_article.data.image != nil
-              %a.image-link{:href => image_path("works/#{current_article.data.image}")}
-                %img.img-responsive{:alt => "", :src => image_path("works/#{current_article.data.image}")}/
+              %a.image-link{:href => image_path("#{current_article.data.image}")}
+                %img.img-responsive{:alt => "", :src => image_path("#{current_article.data.image}")}/
             - elsif current_article.data.video != nil
               .embed-responsive.embed-responsive-16by9
                 %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}

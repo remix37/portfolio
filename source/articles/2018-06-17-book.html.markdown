@@ -1,0 +1,8 @@
+---
+title: Book
+date: '2018-06-17T22:30:37+02:00'
+tags: print
+thumbnail: /works/thumbnail-livre-blanc.png
+image: /works/thumbnail-livre-blanc.png
+---
+Second test

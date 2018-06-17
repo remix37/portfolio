@@ -5,3 +5,14 @@
         %p.text-center
           ©2018 - Rémy Rigault -
           %a{:href => "/mentions"} Mentions Légales
+
+:javascript
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }

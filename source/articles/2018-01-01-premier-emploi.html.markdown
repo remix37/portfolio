@@ -3,8 +3,8 @@
 title: Brochure premier emploi
 date: 2018-01-01
 tags: print
-thumbnail: works/thumbnail-premier-emploi.png
-image: works/thumbnail-premier-emploi.png
+thumbnail: /images/works/thumbnail-premier-emploi.png
+image: /images/works/thumbnail-premier-emploi.png
 
 ---
 

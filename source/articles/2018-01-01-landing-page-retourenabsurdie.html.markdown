@@ -3,8 +3,8 @@
 title: Landing page Retour en absurdie
 date: 2018-01-01
 tags: web
-thumbnail: works/thumbnail-retourenabsurdie.png
-image: works/retourenabsurdie.png
+thumbnail: /images/works/thumbnail-retourenabsurdie.png
+image: /images/works/retourenabsurdie.png
 
 ---
 

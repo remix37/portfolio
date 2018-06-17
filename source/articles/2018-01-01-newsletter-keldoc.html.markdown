@@ -3,8 +3,8 @@
 title: Newsletter KelDoc
 date: 2018-01-01
 tags: web, mailing
-thumbnail: works/thumbnail-newsletter-keldoc.png
-image: works/newsletter-keldoc.png
+thumbnail: /images/works/thumbnail-newsletter-keldoc.png
+image: /images/works/newsletter-keldoc.png
 
 ---
 

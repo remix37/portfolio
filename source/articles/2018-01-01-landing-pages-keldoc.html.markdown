@@ -3,8 +3,8 @@
 title: Landing pages KelDoc
 date: 2018-01-01
 tags: web
-thumbnail: works/thumbnail-landing-pages-keldoc.png
-image: works/landing-pages-keldoc.png
+thumbnail: /images/works/thumbnail-landing-pages-keldoc.png
+image: /images/works/landing-pages-keldoc.png
 
 ---
 

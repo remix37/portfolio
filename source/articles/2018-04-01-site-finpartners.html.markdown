@@ -3,8 +3,8 @@
 title: Site Fin Partners
 date: 2018-04-01
 tags: web
-thumbnail: works/thumbnail-finpartners.png
-image: works/finpartners.png
+thumbnail: /images/works/thumbnail-finpartners.png
+image: /images/works/finpartners.png
 
 ---
 

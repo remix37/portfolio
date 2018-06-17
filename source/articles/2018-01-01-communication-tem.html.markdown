@@ -3,8 +3,8 @@
 title: Communication TEM
 date: 2018-01-01
 tags: print
-thumbnail: works/thumbnail-affiche-TEM.png
-image: works/affiche-TEM.png
+thumbnail: /images/works/thumbnail-affiche-TEM.png
+image: /images/works/affiche-TEM.png
 
 ---
 

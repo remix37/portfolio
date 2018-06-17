@@ -3,8 +3,8 @@
 title: Brochure KelDoc B2B
 date: 2018-01-01
 tags: print
-thumbnail: works/thumbnail-brochure-keldoc-B2B.png
-image: works/brochure-B2B.png
+thumbnail: /images/works/thumbnail-brochure-keldoc-B2B.png
+image: /images/works/brochure-B2B.png
 
 ---
 

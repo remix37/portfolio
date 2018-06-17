@@ -3,8 +3,8 @@
 title: Affiche Amplibook
 date: 2018-01-01
 tags: print
-thumbnail: works/thumbnail-affiche-amplibook.png
-image: works/thumbnail-affiche-amplibook.png
+thumbnail: /images/works/thumbnail-affiche-amplibook.png
+image: /images/works/thumbnail-affiche-amplibook.png
 
 ---
 

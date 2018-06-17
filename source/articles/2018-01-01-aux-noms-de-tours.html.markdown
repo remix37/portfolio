@@ -3,8 +3,8 @@
 title: Aux noms de Tours
 date: 2018-01-01
 tags: print
-thumbnail: works/thumbnail-aux-noms-de-tours.png
-image: works/aux-noms-de-tours.png
+thumbnail: /images/works/thumbnail-aux-noms-de-tours.png
+image: /images/works/aux-noms-de-tours.png
 
 ---
 

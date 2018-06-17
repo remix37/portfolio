@@ -3,8 +3,8 @@
 title: Site KelDoc
 date: 2018-04-01
 tags: web
-thumbnail: works/thumbnail-site-keldoc.png
-image: works/site-keldoc.png
+thumbnail: /images/works/thumbnail-site-keldoc.png
+image: /images/works/site-keldoc.png
 
 ---
 

@@ -3,12 +3,9 @@
 title: Brochure KelDoc B2B
 date: 2018-01-01
 tags: print
+tools: [photoshop, illustrator, indesign]
 thumbnail: /images/works/thumbnail-brochure-keldoc-B2B.png
 image: /images/works/brochure-B2B.png
-
----
-
-**Client :** KelDoc
 
 ---
 
@@ -25,6 +22,6 @@ Réalisation d'un brochure 3 volets, en collaboration avec un Directeur Commerci
 
 ---
 
-![Photoshop](/images/icons/photoshop.svg)
-![Illustrator](/images/icons/illustrator.svg)
-![Indesign](/images/icons/indesign.svg)
+**Client :** KelDoc
+
+[![KelDoc](/images/works/brochure-B2B.png)](/images/works/brochure-B2B.png)

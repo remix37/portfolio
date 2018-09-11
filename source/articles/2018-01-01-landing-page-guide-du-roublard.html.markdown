@@ -3,12 +3,9 @@
 title: Landing page Guide du Roublard
 date: 2018-01-01
 tags: web
+tools: [photoshop, illustrator]
 thumbnail: /images/works/thumbnail-guide-du-roublard.png
 image: /images/works/guide-du-roublard.png
-
----
-
-**Client :** Amplibook
 
 ---
 
@@ -16,5 +13,6 @@ Réalisation d'une Landing Page promouvant le livre numérique "Guide du Roublar
 
 ---
 
-![Photoshop](/images/icons/photoshop.svg)
-![Illustrator](/images/icons/illustrator.svg)
+**Client :** Amplibook
+
+[![KelDoc](/images/works/guide-du-roublard.png)](/images/works/guide-du-roublard.png)

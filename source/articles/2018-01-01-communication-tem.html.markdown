@@ -3,12 +3,9 @@
 title: Communication TEM
 date: 2018-01-01
 tags: print
+tools: [illustrator, indesign]
 thumbnail: /images/works/thumbnail-affiche-TEM.png
 image: /images/works/affiche-TEM.png
-
----
-
-**Client :** Télécom École de Management
 
 ---
 
@@ -16,5 +13,6 @@ Réalisation d'un affiche et de bannière web pour l'événement du 16e Challeng
 
 ---
 
-![Illustrator](/images/icons/illustrator.svg)
-![Indesign](/images/icons/indesign.svg)
+**Client :** Télécom École de Management
+
+[![KelDoc](/images/works/affiche-TEM.png)](/images/works/affiche-TEM.png)

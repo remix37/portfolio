@@ -3,12 +3,9 @@
 title: Communication AEGM
 date: 2018-01-01
 tags: print
+tools: [photoshop, indesign]
 thumbnail: /images/works/thumbnail-aegm.png
 image: /images/works/thumbnail-aegm.png
-
----
-
-**Client :** A.E.G.M "Vos Experts-Comptables"
 
 ---
 
@@ -16,5 +13,4 @@ Réalisation d'une pochette avec l'insertion d'une carte de visite et d'un kaké
 
 ---
 
-![Photoshop](/images/icons/photoshop.svg)
-![Indesign](/images/icons/indesign.svg)
+**Client :** A.E.G.M "Vos Experts-Comptables"

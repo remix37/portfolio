@@ -3,12 +3,9 @@
 title: Logo Fin Partners
 date: 2018-01-01
 tags: Logotype
+tools: [illustrator]
 thumbnail: /images/works/thumbnail-logo-finpartners.png
 image: /images/works/thumbnail-logo-finpartners.png
-
----
-
-**Client :** Fin Partners
 
 ---
 
@@ -16,4 +13,4 @@ Réalisation d'un logo pour le consultant Fin Partnes.
 
 ---
 
-![Illustrator](/images/icons/illustrator.svg)
+**Client :** Fin Partners

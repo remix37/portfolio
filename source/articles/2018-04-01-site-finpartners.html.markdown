@@ -3,14 +3,10 @@
 title: Site Fin Partners
 date: 2018-04-01
 tags: web
+tools: [photoshop, illustrator]
 thumbnail: /images/works/thumbnail-finpartners.png
 image: /images/works/finpartners.png
-
----
-
-**Client :** Fin Partners
-
-**Date :** 01/07/2018 (Déploiement du site)
+link: https://fin-partners.netlify.com/
 
 ---
 
@@ -30,5 +26,8 @@ Site vitrine pour un consultant SAP.
 
 ---
 
-![Photoshop](/images/icons/photoshop.svg)
-![Illustrator](/images/icons/illustrator.svg)
+**Client :** Fin Partners
+
+**Date :** 01/07/2018 (Déploiement du site)
+
+[![KelDoc](/images/works/finpartners.png)](/images/works/finpartners.png)

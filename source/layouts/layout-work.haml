@@ -45,7 +45,7 @@
 
           .clearfix
 
-          .col-md-4.col-md-offset-2
+          .col-md-6.col-md-offset-2.col-xs-8{:style => "min-height: 86px;"}
 
             %ul.list-inline.list-tools.mt-30.mb-15
               - if current_article.data.tools != nil
@@ -54,16 +54,21 @@
               - else
                 %p no tools
 
-          .col-md-4
+          .col-md-2.col-xs-4
             %p.text-right
               - if current_article.data.link != nil
-                %a.link.btn.btn-link.text-uppercase.mt-30.mb-15.pt-5.pb-5{:href => "/"} Aperçu
+                %a.link.btn.btn-link.text-uppercase.mt-30.mb-15.pt-5.pb-5{:href => "#{current_article.data.link}"} Aperçu
 
           .clearfix
 
           .col-md-8.col-md-offset-2.work-body-inner
 
             = yield
+
+            - if current_article.data.video != nil
+              .embed-responsive.embed-responsive-16by9
+                %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
+
 
           -# .col-md-4.col-md-push-8.work-body-inner.mt-60
           -#   = yield

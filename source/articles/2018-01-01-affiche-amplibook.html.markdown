@@ -3,18 +3,14 @@
 title: Affiche Amplibook
 date: 2018-01-01
 tags: print
+tools: [photoshop, illustrator]
 thumbnail: /images/works/thumbnail-affiche-amplibook.png
 image: /images/works/thumbnail-affiche-amplibook.png
 
 ---
 
-**Client :** Amplibook
+Réalisation d'une affiche A2 promouvant les applications réalisées par Amplibook.
 
 ___
 
-Réalisation d'une affiche A2 promouvant les applications réalisées par Amplibook.
-
----
-
-![Photoshop](/images/icons/photoshop.svg)
-![Illustrator](/images/icons/illustrator.svg)
+**Client :** Amplibook

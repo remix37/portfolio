@@ -3,12 +3,9 @@
 title: Landing Page Business 3G
 date: 2018-01-01
 tags: web
+tools: [photoshop, illustrator]
 thumbnail: /images/works/thumbnail-deuxieme-revenu-internet.png
 image: /images/works/deuxieme-revenu-internet.png
-
----
-
-**Client :** Business 3G
 
 ---
 
@@ -16,5 +13,6 @@ Réalisation d'une Landing Page promouvant le livre numérique "Générer un deu
 
 ---
 
-![Photoshop](/images/icons/photoshop.svg)
-![Illustrator](/images/icons/illustrator.svg)
+**Client :** Business 3G
+
+[![KelDoc](/images/works/deuxieme-revenu-internet.png)](/images/works/deuxieme-revenu-internet.png)

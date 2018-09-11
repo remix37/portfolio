@@ -9,8 +9,8 @@
   margin: 0;
 
   & li {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 500;
   }
 }
@@ -36,6 +36,11 @@
     &.illustrator{
       background-color: #F68F36;
       color: #321904;
+    }
+
+    &.indesign{
+      background-color: #FD6EAC;
+      color: #310213;
     }
 
   }

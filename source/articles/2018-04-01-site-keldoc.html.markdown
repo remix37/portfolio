@@ -22,7 +22,7 @@ Proposition de la refonte du site KelDoc.
 ---
 
 **Client :** KelDoc
-| **Date :** 01/01/2018
 
+**Date :** 01/01/2018
 
 [![KelDoc](/images/works/site-keldoc.png)](/images/works/site-keldoc.png)

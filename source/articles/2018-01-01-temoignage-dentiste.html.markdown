@@ -3,7 +3,7 @@
 title: Témoignage KelDoc
 date: 2018-01-01
 tags: video
-tools: [photoshop, after-effect, premiere-pro]
+tools: [photoshop, after-effects, premiere-pro]
 thumbnail: /images/works/thumbnail-temoignage-dentiste.png
 video: https://www.youtube.com/embed/RuB04_YoZq0
 

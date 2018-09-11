@@ -3,7 +3,7 @@
 title: Balade sur Tours
 date: 2018-01-01
 tags: video
-tools: [photoshop, illustrator, after-effect]
+tools: [photoshop, illustrator, after-effects]
 thumbnail: /images/works/thumbnail-balade-sur-tours.png
 video: https://www.youtube.com/embed/kkinhY4-amo
 

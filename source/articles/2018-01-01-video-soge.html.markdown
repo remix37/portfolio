@@ -3,7 +3,7 @@
 title: Vidéo Société Générale
 date: 2018-01-01
 tags: video
-tools: [photoshop, after-effect]
+tools: [photoshop, after-effects]
 thumbnail: /images/works/thumbnail-video-soge.png
 video: https://www.youtube.com/embed/Sc9ZigYzrtM
 

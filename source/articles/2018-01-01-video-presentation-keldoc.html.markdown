@@ -3,7 +3,7 @@
 title: Vidéo publicitaire
 date: 2018-01-01
 tags: video
-tools: [photoshop, after-effect]
+tools: [photoshop, after-effects]
 thumbnail: /images/works/thumbnail-video-presentation-keldoc.png
 video: https://www.youtube.com/embed/WJMYkk-CB5k
 

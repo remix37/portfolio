@@ -1,10 +1,6 @@
 .work-banner{
-  padding: 50px 0 40px;
+  padding: 50px 0 35px;
   // @include retina('../images/works/bg-works.png', 2, cover, center center no-repeat);
-}
-
-.work-body-inner img{
-  // width: 50px;
 }
 
 .list-tags {
@@ -17,4 +13,38 @@
     padding-right: 15px;
     font-weight: 500;
   }
+}
+
+.list-tools {
+  & li{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 25px;
+    margin-right: 10px;
+    background-color: darken($white-color, 15%);
+    padding: 5px 12px;
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &.photoshop{
+      background-color: #00C5E0;
+      color: #001F24;
+    }
+
+    &.illustrator{
+      background-color: #F68F36;
+      color: #321904;
+    }
+
+  }
+}
+
+.work-body-inner hr {
+  margin: 15px 0;
+}
+
+.work-body-inner img{
+  // width: 50px;
 }

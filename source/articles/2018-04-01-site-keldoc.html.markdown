@@ -20,6 +20,7 @@ Proposition de la refonte du site KelDoc.
 - Wireframes
 - Webdesign
 - Livraison des assets
+- Collaboration avec une Chef de Projet Transverse sur le partie UX du site
 
 ---
 

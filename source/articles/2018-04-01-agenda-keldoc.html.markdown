@@ -17,7 +17,7 @@ Refonte du design de l'agenda KelDoc, outil destiné à tout professionnel de sa
 - Webdesign
 - Livraison des assets
 - Création d'une font d'icônes
-- Mise à jour régulier des fonctionnalités en collaboration avec un chef de produit
+- Mise à jour régulière sur la partie UX des fonctionnalités (déjà existantes et les prochaines) en collaboration avec un Chef de Produit
 
 ---
 

@@ -15,4 +15,8 @@ Réalisation d'une Landing Page promouvant le livre numérique "Retour en Absurd
 
 **Client :** Édition Plon
 
+---
+
+## Maquette
+
 [![KelDoc](/images/works/retourenabsurdie.png)](/images/works/retourenabsurdie.png)

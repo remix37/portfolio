@@ -1,6 +1,13 @@
 //= require magnific-popup/dist/jquery.magnific-popup.js
 
+
+
 $(document).ready(function() {
+
+  $(".tool").text(function(index, text) {
+    return text.replace('-', ' ');
+  });
+
   // $(".work-body-inner strong").addClass("text-uppercase");
   // $(".work-body-inner ul").addClass("list-inline");
   $(".work-body-inner img").addClass("img-responsive");

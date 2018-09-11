@@ -15,4 +15,8 @@ Réalisation d'un affiche et de bannière web pour l'événement du 16e Challeng
 
 **Client :** Télécom École de Management
 
+---
+
+## Affiche
+
 [![KelDoc](/images/works/affiche-TEM.png)](/images/works/affiche-TEM.png)

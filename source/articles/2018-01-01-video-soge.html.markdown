@@ -3,7 +3,7 @@
 title: Vidéo Société Générale
 date: 2018-01-01
 tags: video
-tools: [photoshop, after effect]
+tools: [photoshop, after-effect]
 thumbnail: /images/works/thumbnail-video-soge.png
 video: https://www.youtube.com/embed/Sc9ZigYzrtM
 
@@ -25,3 +25,7 @@ KelDoc, en partenariat avec la Société Générale, propose une vidéo explicat
 **Lien de l'offre**](https://professionnels.societegenerale.fr/essentiel_quotidien/offre-keldoc.html)
 
 **Date :** 01/03/2018
+
+---
+
+## Vidéo

@@ -15,4 +15,8 @@ Réalisation d'une Landing Page promouvant le livre numérique "Guide du Roublar
 
 **Client :** Amplibook
 
+---
+
+## Maquette
+
 [![KelDoc](/images/works/guide-du-roublard.png)](/images/works/guide-du-roublard.png)

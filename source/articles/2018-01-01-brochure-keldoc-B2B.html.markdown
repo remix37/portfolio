@@ -24,4 +24,8 @@ Réalisation d'un brochure 3 volets, en collaboration avec un Directeur Commerci
 
 **Client :** KelDoc
 
+---
+
+## Brochure
+
 [![KelDoc](/images/works/brochure-B2B.png)](/images/works/brochure-B2B.png)

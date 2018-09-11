@@ -15,4 +15,8 @@ Réalisation d'une Landing Page promouvant le livre numérique "Générer un deu
 
 **Client :** Business 3G
 
+---
+
+## Maquette
+
 [![KelDoc](/images/works/deuxieme-revenu-internet.png)](/images/works/deuxieme-revenu-internet.png)

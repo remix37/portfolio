@@ -1,9 +1,10 @@
 //= require magnific-popup/dist/jquery.magnific-popup.js
 
 $(document).ready(function() {
-  $(".work-body-inner strong").addClass("text-uppercase");
+  // $(".work-body-inner strong").addClass("text-uppercase");
   // $(".work-body-inner ul").addClass("list-inline");
-  $(".work-body-inner img").height(30);
+  $(".work-body-inner img").addClass("img-responsive");
+  $(".work-body-inner img").parent().addClass("image-link");
   $('.image-link').magnificPopup({
     type: 'image',
 		closeOnContentClick: true,

@@ -28,30 +28,54 @@
     .work-banner.mt-80
       .container
         .row
-          .col-sm-6
-            %h1.mt-0.mb-0
+          .col-md-12
+            %h1.text-center.mt-0.mb-0
               = current_article.title
-          .col-sm-6
-            %ul.list-inline.list-tags.pull-right
+            %ul.list-inline.list-tags.text-center
               - current_article.tags.each do |tag|
-                %li.text-uppercase= tag
+                %li.text-uppercase{:class => "#{tag}"}= tag
 
     .work-body.mb-60
       .container
         .row
 
-          .col-md-4.col-md-push-8.work-body-inner.mt-60
+          .col-md-12
+            %img.img-responsive{:src => "https://picsum.photos/2240/600?image=0"}
+
+          .clearfix
+
+          .col-md-4.col-md-offset-2
+
+            %ul.list-inline.list-tags
+              - if current_article.data.tools != nil
+                - current_article.data.tools.each do |tool|
+                  %li= tool
+              - else
+                %p no tools
+
+          .col-md-4
+            %p.text-right
+              - if current_article.data.link != nil
+                %a.link.btn.btn-link.text-uppercase{:href => "/"} Aperçu
+
+          .clearfix
+
+          .col-md-8.col-md-offset-2.work-body-inner
+
             = yield
 
-          .col-md-8.col-md-pull-4.mt-60
-            - if current_article.data.image != nil
-              %a.image-link{:href => image_path("#{current_article.data.image}")}
-                %img.img-responsive{:alt => "", :src => image_path("#{current_article.data.image}")}/
-            - elsif current_article.data.video != nil
-              .embed-responsive.embed-responsive-16by9
-                %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
-            - else
-              %p nil
+          -# .col-md-4.col-md-push-8.work-body-inner.mt-60
+          -#   = yield
+          -#
+          -# .col-md-8.col-md-pull-4.mt-60
+          -#   - if current_article.data.image != nil
+          -#     %a.image-link{:href => image_path("#{current_article.data.image}")}
+          -#       %img.img-responsive{:alt => "", :src => image_path("#{current_article.data.image}")}/
+          -#   - elsif current_article.data.video != nil
+          -#     .embed-responsive.embed-responsive-16by9
+          -#       %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
+          -#   - else
+          -#     %p nil
 
     = partial "partials/footer"
     = javascript_include_tag "site"

@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
   $(".tool").text(function(index, text) {
-    return text.replace('-', ' ');
+    return text.replace(/\-/g, ' ');
   });
 
   // $(".work-body-inner strong").addClass("text-uppercase");

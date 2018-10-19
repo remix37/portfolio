@@ -1,16 +1,29 @@
-@media screen and (min-width: $screen-sm-min){
-  .work-tools > div {
-    background: white;
-    position: relative;
-    bottom: 42px;
-    padding: 30px 40px 0;
-    min-height: 69px;
+  .work-tools{
+    @media screen and (min-width: $screen-sm-min){
+      background-color: $white-color;
+      padding: 20px 40px 15px;
+      min-height: 69px;
+      // position: relative;
+      // bottom: 42px;
+      @include box-shadow(0 3px 15px rgba(0, 0, 0, 0.15));
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: $screen-xs-max){
+      padding-top: 75px;
+    }
   }
+
+.work-banner {
+  padding-top: 80px;
 }
 
-.work-banner{
-  padding: 50px 0 35px;
+.work-img{
+  padding-top: 50px;
   // @include retina('../images/works/bg-works.png', 2, cover, center center no-repeat);
+  img{
+    position: relative;
+    top: 60px;
+  }
 }
 
 .list-tags {
@@ -22,6 +35,13 @@
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 500;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 

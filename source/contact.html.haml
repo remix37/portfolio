@@ -17,12 +17,9 @@ title: Contact
     .col-md-8.col-md-offset-2.mt-60
       #thank-you-message.hidden{:role => "alert"}
         Merci de m'avoir contacté, je vous répondrai dès que possible. :)
-  %form.row{:action => "https://getsimpleform.com/messages?form_api_token=dc387a7a7d80cf9792eabe33f4af2a25", :method => "post", :enctype => "multipart/form-data"}
+  %form.row{:action => "https://formspree.io/r.rigault@me.com", :method => "post"}
 
-    %input{:name => "redirect_to", :type => "hidden", :value => "https://www.remyrigault.pro/contact/#thank-you"}/
-
-    %input{:name => "_folder", :type => "hidden", :value => "quotes"}/
-    %input{:name => "_spam", :type => "hidden", :value => "message"}/
+    %input{:name => "_next", :type => "hidden", :value => "https://www.remyrigault.pro/contact/#thank-you"}/
 
     .col-md-4.col-md-offset-2
       .form-group
@@ -36,7 +33,7 @@ title: Contact
 
     .col-md-8.col-md-offset-2
       .form-group
-        %input.form-control{:name => "mail", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
+        %input.form-control{:name => "_replyto", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
 
     .clearfix
 
@@ -45,4 +42,4 @@ title: Contact
         %textarea.form-control{:name => "message", :placeholder => "Message", :rows => "3"}
 
 
-      %button.btn.btn-link.link.text-uppercase.btn-lg{:type => "Submit"} Envoyer
+      %input.btn.btn-link.link.text-uppercase.btn-lg{:type => "submit", :value => "Envoyer"}

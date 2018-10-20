@@ -59,10 +59,11 @@
   line-height: 1em;
   font-weight: 700;
   margin-top: 0;
+  opacity:0;
 }
 
 .post.animate{
-  animation: post 2s 0.3s ease-in-out 1 both;
+  animation: post 0.8s ease-in-out 1 both;
 }
 
 #particles-js {

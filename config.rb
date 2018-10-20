@@ -15,7 +15,7 @@ page "/contact.html", layout: "layout-contact"
 page "/works/*.html", layout: "layout-works"
 
 # Redirect
-redirect "./projects/index.html", to: "../all-works/index.html"
+redirect "./projects/index.html", to: "../all-works"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {

@@ -12,6 +12,7 @@ $(document).ready(function() {
   // $(".work-body-inner ul").addClass("list-inline");
   $(".work-body-inner img").addClass("img-responsive");
   $(".work-body-inner img").parent().addClass("image-link");
+  $(".work-body-inner > ul").addClass("list-unstyled");
   $('.image-link').magnificPopup({
     type: 'image',
 		closeOnContentClick: true,

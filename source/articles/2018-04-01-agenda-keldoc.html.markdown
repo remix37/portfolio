@@ -25,10 +25,5 @@ Refonte du design de l'agenda KelDoc, outil destiné à tout professionnel de sa
 
 ---
 
-## Protypage papier
-
-[![KelDoc](/images/works/draft-agenda-keldoc.png)](/images/works/draft-agenda-keldoc.png)
-
-## Maquettes
-
-[![KelDoc](/images/works/agenda-keldoc.png)](/images/works/agenda-keldoc.png)
+[![Charte graphique](/images/works/agenda-keldoc-1.png)](/images/works/agenda-keldoc-1.png)
+[![Maquettes](/images/works/agenda-keldoc-2.png)](/images/works/agenda-keldoc-2.png)

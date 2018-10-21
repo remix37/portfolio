@@ -1,7 +1,7 @@
 .footer {
-  background-color: $rr-color;
+  background-color: lighten($gray-lighter, 2%);
 
   & p, & a {
-    color: $white-color;
+    color: $gray-light;
   }
 }

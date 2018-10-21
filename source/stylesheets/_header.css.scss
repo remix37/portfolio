@@ -10,9 +10,21 @@
   @include transition(all);
 }
 
-.navbar-rr {
-  background-color: rgba($white-color, 0);
+.navbar-rr-animate{
+  @media screen and (min-width: $screen-sm-min){
+    background-color: rgba($white-color, 0);
+  }
   @include box-shadow(none);
+
+  ul.navbar-nav li {
+    opacity: 0;
+    transform : translateY(-25px),
+  }
+}
+
+.logo-rr-animate{
+  opacity: 0;
+  transform : translateY(-25px),
 }
 
 .navbar-toggle {

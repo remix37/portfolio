@@ -12,9 +12,9 @@ $(document).ready(function() {
       $(document).scroll(function() {
           scroll_start = $(document).scrollTop();
           if(scroll_start > offset.top - 200) {
-              $(".navbar").removeClass("navbar-rr");
+              $(".navbar").removeClass("navbar-rr-animate");
           } else {
-              $(".navbar").addClass("navbar-rr");
+              $(".navbar").addClass("navbar-rr-animate");
           }
       });
   }
@@ -33,12 +33,22 @@ $(document).ready(function() {
       opacity : 0,
   	});
 
-
     tl.to($('.particles-transition'), 0.5, {
       transform : 'scaleY(0)',
       display: 'none',
       ease:Power4.easeOut
     });
+
+    tl.to($('.logo-rr-animate'), 0.5, {
+      opacity : 1,
+      transform : 'translateY(0)',
+    }, "-=0.6");
+
+    tl.staggerTo($('.navbar-rr-animate ul.navbar-nav li'), 0.5, {
+      opacity : 1,
+      transform : 'translateY(0)',
+    }, 0.2, "-=0.4");
+
 
     tl.from($('.author'), 1, {
       transform : 'translateY(75px)',
@@ -64,21 +74,22 @@ $(document).ready(function() {
       opacity : 0,
     }, 0.3, "-=0.6");
 
-    tl.from($('.localisation .map'), 1, {
+    tl.from($('.localisation'), 1, {
       opacity : 0,
       ease:Power4.easeInOut
     }, "-=0.8");
 
-    tl.from($('.localisation .icons-social li'), 1, {
-      opacity : 0,
-      ease:Power4.easeInOut
-    }, "-=0.8");
-
-    tl.from($('.scroll'), 1, {
+    tl.from($('.scroll'), 2, {
       opacity : 0,
       transform : 'translateY(-75px)',
       ease:Power4.easeInOut
-    }, "-=0.8");
+    }, "-=1.2");
+
+    tl.from($('.about-me, .footer'), 1, {
+      opacity : 0,
+      display : "none",
+      ease:Power4.easeInOut
+    }, "-=0.6");
 
   }
 

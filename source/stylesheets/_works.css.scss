@@ -59,22 +59,28 @@
       margin-right: 0;
     }
 
-    &.photoshop{
-      @include linear-gradient(to right, #00C5E0, adjust-hue(#00C5E0, 20%));
+    &.photoshop,
+    &.illustrator,
+    &.indesign,
+    &.after-effects{
       color: $white-color;
       text-shadow: 0 1px 3px rgba($black-color, 0.15);
+    }
+
+    &.photoshop{
+      @include linear-gradient(to right, #00C5E0, adjust-hue(#00C5E0, 20%));
     }
 
     &.illustrator{
       @include linear-gradient(to right, #F68F36, adjust-hue(#F68F36, 20%));
-      color: $white-color;
-      text-shadow: 0 1px 3px rgba($black-color, 0.15);
     }
 
     &.indesign{
       @include linear-gradient(to right, #FD6EAC, adjust-hue(#FD6EAC, 20%));
-      color: $white-color;
-      text-shadow: 0 1px 3px rgba($black-color, 0.15);
+    }
+
+    &.after-effects{
+      @include linear-gradient(to right, #CB90F5, adjust-hue(#CB90F5, 20%));
     }
 
   }

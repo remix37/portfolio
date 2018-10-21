@@ -12,9 +12,14 @@
 @import "./works.css.scss";
 @import "./preload.css.scss";
 @import "./links.css.scss";
+@import "./cards.css.scss";
 
 body {
   // padding-top: 70px;
+}
+
+.white {
+  color: $white-color;
 }
 
 .height-100{
@@ -33,63 +38,6 @@ h3 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
-}
-
-.block {
-  @include box-shadow(0px 1px 3px rgba($black-color, 0.15));
-  background-color: $white-color;
-  // position: relative;
-  @include transition(all);
-  &:hover {
-    @include box-shadow(0px 8px 15px rgba($black-color, 0.25));
-    // bottom: 3px;
-    @include transform(translate(0%, -6px));
-  }
-  a {
-    color: $black-color;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  .link-work{
-    position: relative;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  & .link-work:before, & .link-work:after{
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    top: 50%;
-    margin-top: -1.5px;
-    background: #fff;
-  }
-  & .link-work:before{
-    left: 0px;
-  }
-  & .link-work:after{
-    right: 0px;
-    background: $rr-color;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  &:hover .link-work:before{
-    background: $rr-color;
-    width: 100%;
-    transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-  }
-  &:hover .link-work:after{
-    background: transparent;
-    width: 100%;
-    transition: 0s;
-  }
-}
-.block-inner {
-  padding: 0 15px 15px;
-  h3{
-    min-height: 40px;
-  }
 }
 
 .text-underline {

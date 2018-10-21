@@ -14,6 +14,7 @@
     margin-top: -1.5px;
     background: #fff;
   }
+
   &:before {
     left: 0px;
   }
@@ -42,6 +43,23 @@
   }
   &:after {
     display: none;
+  }
+}
+
+// Strikethrough hover white
+
+.link.white {
+  &:hover {
+    color: $white-color;
+  }
+  &:after {
+    background: $white-color;
+  }
+  &:hover:before {
+    background: $white-color;
+  }
+  &:hover:after {
+    background: transparent;
   }
 }
 

@@ -1,6 +1,7 @@
 .home {
   width: 100%;
-  border-bottom: 1px solid $rr-color;
+  // border-bottom: 1px solid $rr-color;
+  background-color: $white-color;
 }
 
 .about-me {
@@ -16,31 +17,75 @@
 }
 
 .particles{
-  height: 50vh;
+  height: 40vh;
   width: 100%;
-  min-height: 320px;
+  min-height: 256px;
+}
+
+.localisation {
+  @media screen and (min-width: $screen-sm-min){
+    min-height: 64px;
+    height: 10vh;
+  }
+
+  p{
+    color: $gray-light;
+  }
+
+  span.fa {
+    font-size: 1.2em;
+  }
+
+  .icons-social{
+    font-size: 1.2em;
+
+    li {
+      margin-right: 10px;
+      a {
+        color: $gray-light;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+
+    }
+  }
+}
+
+.paragraph {
+  background-color: $rr-color;
+  @include box-shadow(0 3px 15px rgba(0, 0, 0, 0.15));
+  padding: 30px 30px 5px;
+
+  @media screen and (min-width: $screen-md-min){
+    position: relative;
+    bottom: 90px;
+  }
 }
 
 .description {
-  padding: 30px 0 120px;
-  @media screen and (min-width: $screen-sm-min){
+  padding: 30px 0;
+  @media screen and (min-width: $screen-md-min){
     min-height: 224px;
     height: 35vh;
   }
 }
 
 .scroll {
-  @media screen and (min-width: $screen-sm-min){
+  @media screen and (min-width: $screen-md-min){
     min-height: 96px;
     height: 15vh;
   }
 }
 
 .icon-scroll{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+
+  margin: auto;
+  // @media screen and (min-width: $screen-md-min){
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translate(-50%, 0%);
+  // }
 }
 
 .author {
@@ -49,7 +94,7 @@
   font-weight: 700;
   margin: 0;
   position: absolute;
-  bottom: -0.15em;
+  bottom: -8px;
   font-family: 'DIN Pro Condensed Medium';
   color: $white-color;
 }
@@ -119,7 +164,7 @@
 
 .btn-lg{
   font-weight: 500;
-  border: 1px solid lighten($rr-color, 25%);
+  border: 1px solid lighten($rr-color, 35%);
   border-radius: 0;
   @include transition(all);
   font-family: 'DIN Pro Condensed Medium';

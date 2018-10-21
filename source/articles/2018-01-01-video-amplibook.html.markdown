@@ -23,7 +23,3 @@ Vidéo de présentation de la startup française Amplibook
 **Client :** Amplibook
 
 **Date :** 01/08/2014
-
----
-
-## Vidéo

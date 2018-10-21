@@ -20,10 +20,10 @@ per_page: 9
 
     - page_articles.each_with_index do |article|
       .col-sm-4.mb-30
-        .block
+        .card
           = link_to article do
             %img.img-responsive{:alt => "", :src => image_path("#{article.data.thumbnail}")}/
-            .block-inner
+            .card-inner
               %h3= article.title
               %span.btn.btn-link.link-work.text-uppercase Voir plus
 

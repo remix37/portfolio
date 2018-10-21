@@ -1,7 +1,18 @@
+.navbar-inverse {
+  border-bottom: none;
+  @include transition(all);
+}
+
 .navbar-default {
   background-color: $white-color;
   border-bottom: none;
   @include box-shadow(0px 1px 3px rgba($black-color, 0.15));
+  @include transition(all);
+}
+
+.navbar-rr {
+  background-color: rgba($white-color, 0);
+  @include box-shadow(none);
 }
 
 .navbar-toggle {

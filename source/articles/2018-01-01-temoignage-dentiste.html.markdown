@@ -19,7 +19,3 @@ Montage vidéo du témoignage de Norek, Chirurgien Dentiste.
 ---
 
 **Client :** KelDoc
-
----
-
-## Vidéo

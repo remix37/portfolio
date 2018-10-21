@@ -62,6 +62,6 @@ $(document).ready(function() {
     setTimeout(function() {
       NProgress.done();
       $('.post').addClass('animate');
-    }, 1000);
+    });
 
 });

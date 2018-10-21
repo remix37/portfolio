@@ -31,8 +31,3 @@ Proposition d'une vidéo publicitaire destinée aux professionnels de santé. Ce
 [![KelDoc](/images/works/draft-video-presentation-2.png)](/images/works/draft-video-presentation-1.png)
 
 [![KelDoc](/images/works/draft-video-presentation-3.png)](/images/works/draft-video-presentation-1.png)
-
-
----
-
-## Vidéo retenue

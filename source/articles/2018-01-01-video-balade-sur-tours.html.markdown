@@ -22,7 +22,3 @@ Projet d'étude réalisé en fin de cursus à l'école numérique ESTEN.
 **Projet d'étude**
 
 **Date :** 01/08/2014
-
----
-
-## Vidéo

@@ -5,7 +5,7 @@ per_page: 6
 
 ---
 
-.particles.pt-80
+.particles
   #particles-js
 
 .home
@@ -17,21 +17,40 @@ per_page: 6
     .clearfix
     .row.description
       .col-md-5
-        %p.text-uppercase.post.test
+        %p.text-uppercase.post.mb-30
           %strong
             Designer UX/UI
           -# %br
           -# Developer Web Front End
       .col-md-6
-        %p Jeune Designer basé sur Paris, j'ai suivi un premier cursus dans l'édition numérique et spécialisé par la suite dans la conception et le développement web.
-        %p
-          J'aime croire que l'on peut tout designer quel que soit le type de média.
-          -# Ma philosophie :
-          -# %em.text-underline Le design, c'est comme la barre de fer, on peut tout faire.
+        .paragraph.white
+          %p Jeune Designer basé en Hauts-de-Seine, j'ai suivi un premier cursus dans l'édition numérique et spécialisé par la suite dans la conception et le développement web.
+          %p
+            J'aime croire que l'on peut tout designer quel que soit le type de média.
+            -# Ma philosophie :
+            -# %em.text-underline Le design, c'est comme la barre de fer, on peut tout faire.
 
-        %p Constamment à la recherche de nouvelles opportunités, n'hésitez pas à me contacter pour me faire partager un projet.
-        %p.mt-30.mb-30
-          %a.btn.btn-link.link.text-uppercase.btn-lg{:href => "/contact"} Me contacter
+          %p Constamment à la recherche de nouvelles opportunités, n'hésitez pas à me contacter pour me faire partager un projet.
+          %p.mt-30.mb-30
+            %a.btn.btn-link.link.text-uppercase.btn-lg.white{:href => "/contact"} Me contacter
+    .clearfix
+    .row.localisation
+      .col-md-3.col-md-offset-9
+        %p
+          %span.fa.fa-map-signs.mr-5.mb-10
+          Châtenay-Malabry, France
+        %ul.list-inline.icons-social.ml-0
+          %li
+            %a{:href => "https://github.com/remix37"}
+              %span.fa.fa-github
+          %li
+            %a{:href => "https://www.linkedin.com/in/remyrigault"}
+              %span.fa.fa-linkedin
+          %li
+            %a{:href => "https://twitter.com/remyrigault"}
+              %span.fa.fa-twitter
+
+
     .clearfix
     .row.scroll
       .col-xs-2.col-xs-offset-5.height-100
@@ -105,10 +124,10 @@ per_page: 6
         .row
           - page_articles.each_with_index do |article|
             .col-sm-6.col-md-4.mb-30
-              .block
+              .card
                 = link_to article do
                   %img.img-responsive{:alt => "", :src => image_path("#{article.data.thumbnail}")}/
-                  .block-inner
+                  .card-inner
                     %h3= article.title
                     %span.btn.btn-link.link-work.text-uppercase Voir plus
         .row

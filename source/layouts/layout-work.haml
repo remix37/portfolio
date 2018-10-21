@@ -68,6 +68,8 @@
             = yield
 
             - if current_article.data.video != nil
+              %hr  
+              %h2 Vidéo
               .embed-responsive.embed-responsive-16by9
                 %iframe.embed-responsive-item{:src => "#{current_article.data.video}"}
 

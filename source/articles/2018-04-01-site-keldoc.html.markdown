@@ -30,10 +30,6 @@ Proposition de la refonte du site KelDoc.
 
 ---
 
-## Protypages papier
-
-[![KelDoc](/images/works/draft-site-keldoc.png)](/images/works/draft-site-keldoc.png)
-
-## Maquettes
-
-[![KelDoc](/images/works/site-keldoc.png)](/images/works/site-keldoc.png)
+[![Prototypages papier](/images/works/keldoc-1.png)](/images/works/keldoc-1.png)
+[![Charte graphique](/images/works/keldoc-2.png)](/images/works/keldoc-2.png)
+[![Maquettes](/images/works/keldoc-3.png)](/images/works/keldoc-3.png)

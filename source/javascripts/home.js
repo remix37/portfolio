@@ -93,6 +93,13 @@ $(document).ready(function() {
 
   }
 
-  animation();
+  if(window.location.hash != '#disable'){
+		animation();
+	}else{
+    $(".navbar-rr-animate ul.navbar-nav li, .logo-rr-animate").css({
+      "opacity" : "1",
+      "transform" : "translateY(0)"
+    });
+  }
 
 });

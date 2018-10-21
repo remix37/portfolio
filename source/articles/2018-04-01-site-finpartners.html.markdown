@@ -33,10 +33,6 @@ Site vitrine pour un consultant SAP.
 
 ---
 
-## Protypages papier
-
-[![KelDoc](/images/works/draft-finpartners.png)](/images/works/draft-finpartners.png)
-
-## Maquettes
-
-[![KelDoc](/images/works/finpartners.png)](/images/works/finpartners.png)
+[![Prototypages papier](/images/works/finpartners-1.png)](/images/works/finpartners-1.png)
+[![Charte graphique](/images/works/finpartners-2.png)](/images/works/finpartners-2.png)
+[![Maquettes](/images/works/finpartners-3.png)](/images/works/finpartners-3.png)

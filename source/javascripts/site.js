@@ -2,11 +2,8 @@
 
 //= require jquery/dist/jquery.min.js
 //= require bootstrap-sass/assets/javascripts/bootstrap.min.js
-//= require nprogress/nprogress.js
 
 $(document).ready(function() {
-
-  NProgress.start();
 
   // Select all links with hashes
   $('a[href*="#"]')
@@ -56,12 +53,6 @@ $(document).ready(function() {
               $(this).addClass("show");
             }
         });
-    });
-
-    // NProgress.done();
-    setTimeout(function() {
-      NProgress.done();
-      $('.post').addClass('animate');
     });
 
 });

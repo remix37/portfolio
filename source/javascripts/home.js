@@ -93,7 +93,7 @@ $(document).ready(function() {
 
   }
 
-  if(window.location.hash != '#disable'){
+  if(window.location.hash != '#Home'){
 		animation();
 	}else{
     $(".navbar-rr-animate ul.navbar-nav li, .logo-rr-animate").css({

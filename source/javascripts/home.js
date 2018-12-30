@@ -86,7 +86,7 @@ $(document).ready(function() {
     tl.from($('.localisation'), 1, {
       opacity : 0,
       ease:Power4.easeInOut
-    }, "-=0.6");
+    }, "-=1.2");
 
     tl.from($('.scroll'), 2, {
       opacity : 0,

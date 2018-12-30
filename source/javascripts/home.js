@@ -19,6 +19,10 @@ $(document).ready(function() {
       });
   }
 
+  $('.carousel').carousel({
+    interval: 5000
+  })
+
   function animation(){
 
     var tl = new TimelineLite();
@@ -61,6 +65,11 @@ $(document).ready(function() {
       ease:Power4.easeInOut
     }, "-=0.6");
 
+    tl.from($('#carousel-testimonies'), 1, {
+      opacity : 0,
+      ease:Power4.easeInOut
+    }, "-=0.6");
+
     tl.from($('.paragraph'), 1, {
       // opacity : 0,
       'padding-top' : 0,
@@ -77,7 +86,7 @@ $(document).ready(function() {
     tl.from($('.localisation'), 1, {
       opacity : 0,
       ease:Power4.easeInOut
-    }, "-=0.8");
+    }, "-=0.6");
 
     tl.from($('.scroll'), 2, {
       opacity : 0,

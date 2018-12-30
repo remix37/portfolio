@@ -182,3 +182,93 @@
   @include transition(all);
   font-family: 'DIN Pro Condensed Medium';
 }
+
+// carousel
+
+#carousel-testimonies {
+  blockquote {
+    padding: 0px 15px;
+    border-left-width: 3px;
+    p {
+      font-size : 0.7em;
+      margin-bottom: 5px;
+    }
+    footer{
+      margin-top: 10px;
+      font-size : 0.8em;
+      font-style: italic;
+    }
+  }
+}
+
+#carousel-testimonies > .carousel-indicators {
+  position: relative;
+  left: 0;
+  width: auto;
+  margin: 0 0 10px;
+  text-align: left;
+  bottom: 0;
+
+  li {
+    border: none;
+    background: #eee;
+    height: 2px;
+    border-radius: 1px;
+    width: 30px;
+    overflow: hidden;
+    &.active {
+      margin: 1px;
+      &:before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 30px;
+        background: $rr-color;
+        -webkit-animation: dash 5s linear;
+        animation: dash 5s linear;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes dash {
+  from {width: 0;}
+  to {width: 30px;}
+}
+
+@keyframes dash {
+  from {width: 0;}
+  to {width: 30px;}
+}
+
+#carousel-testimonies {
+  .carousel-inner {
+      .item {
+          transition-property: opacity;
+      }
+
+      .item,
+      .active.left,
+      .active.right {
+          opacity: 0;
+      }
+
+      .active,
+      .next.left,
+      .prev.right {
+          opacity: 1;
+      }
+
+      .next,
+      .prev,
+      .active.left,
+      .active.right {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+      }
+  }
+
+  .carousel-control {
+      z-index: 2;
+  }
+}

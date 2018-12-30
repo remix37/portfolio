@@ -2,10 +2,11 @@
 
 pageable: false
 per_page: 6
+description: Jeune Designer basé en Hauts-de-Seine, j'ai suivi un premier cursus dans l'édition numérique et spécialisé par la suite dans la conception et le développement web.
 
 ---
 
-.particles-transition
+.particles-transition#Home
 .particles
   #particles-js
 
@@ -23,6 +24,36 @@ per_page: 6
             Designer UX/UI
           -# %br
           -# Developer Web Front End
+
+        #carousel-testimonies.carousel.slide{"data-ride" => "carousel"}
+
+          / Indicators
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#carousel-testimonies"}
+            %li{"data-slide-to" => "1", "data-target" => "#carousel-testimonies"}
+
+          / Wrapper for slides
+          .carousel-inner{:role => "listbox"}
+            .item.active
+              %blockquote
+                %p Extrêmement efficace !
+                %p J'ai plaisir de travailler avec Rémy sur nos projets communs depuis 2 ans.
+                %p J'apprécie particulièrement la qualité de ce qu'il produit, sa patience, et sa créativité.
+                %footer Constance Colle - Responsable de l'équipe de déploiement at KelDoc
+            .item
+              %blockquote
+                %p Rémy has an aptitude for aesthetics and understanding clients that makes him stand out from the thousands of freelance graphic and web designers on the Internet that I have been in touch during my careers of IT Recruiter.
+                %p He pays close attention to what you say during consultation sessions and tries to capture the essence of your requests in his designs. In other words, he doesn’t just create something that looks visually pleasing, but he also makes sure that it reflects the values of your website.
+                %footer Fineaze Mosengo - Founder / Senior SAP Recruitment Consultant at Fin Partners
+
+          / Controls
+          -# %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-testimonies", :role => "button"}
+          -#   %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+          -#   %span.sr-only Previous
+          -# %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-testimonies", :role => "button"}
+          -#   %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+          -#   %span.sr-only Next
+
       .col-md-6
         .paragraph.white
           %p Jeune Designer basé en Hauts-de-Seine, j'ai suivi un premier cursus dans l'édition numérique et spécialisé par la suite dans la conception et le développement web.
